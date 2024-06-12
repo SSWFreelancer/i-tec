@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Айтек</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+				<svg viewBox="0 0 149 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="toBlack" d="M10.27 13.5478H14.1275L24.3311 37.8924H20.2746L17.6365 31.4678H6.73609L4.09808 37.8924H0.0664062L10.27 13.5478ZM8.15464 27.9724H16.2429L12.2112 17.8801L8.15464 27.9724ZM52.6026 37.8924V20.3417L38.8899 37.8924H35.5551V13.5478H39.4126V31.1232L53.1252 13.5478H56.4601V37.8924H52.6026ZM86.3492 13.5478V17.0186H78.9578V37.8924H75.1003V17.0186H67.7089V13.5478H86.3492ZM115.342 34.397V37.8678H97.5981V13.5232H114.994V16.994H101.456V23.4186H112.182V26.8893H101.456V34.3478H115.342V34.397ZM131.519 25.3632L142.594 13.5232H147.521L138.039 23.6155L148.243 37.8678H143.489L135.401 26.397L131.544 30.5817V37.8924H127.686V13.5478H131.544V25.3632H131.519Z" fill="white"/>
+					<path d="M49.2922 8.69843C49.3059 9.15382 49.2053 9.60546 48.9994 10.013C48.7934 10.4205 48.4886 10.7712 48.1122 11.0337C47.7357 11.2962 47.2993 11.4624 46.8421 11.5173C46.3848 11.5722 45.9209 11.5142 45.4919 11.3484C45.0629 11.1827 44.6821 10.9143 44.3835 10.5674C44.085 10.2205 43.878 9.80575 43.7811 9.36036C43.6842 8.91496 43.7004 8.45276 43.8283 8.01508C43.9562 7.57741 44.1917 7.1779 44.5139 6.85228C45.0863 6.28612 45.8578 6.01535 46.6044 6.03997H46.6293C47.0145 6.05013 47.3977 5.98259 47.7556 5.84145C48.1135 5.70032 48.4386 5.48855 48.7111 5.21906C48.9835 4.94958 49.1976 4.62802 49.3403 4.27401C49.483 3.92 49.5513 3.54094 49.541 3.15997V3.13535C49.5273 2.67997 49.6279 2.22832 49.8339 1.8208C50.0398 1.41328 50.3446 1.06258 50.7211 0.800068C51.0975 0.537556 51.5339 0.371412 51.9911 0.316492C52.4484 0.261572 52.9123 0.319589 53.3413 0.485354C53.7704 0.651119 54.1512 0.919466 54.4497 1.2664C54.7483 1.61333 54.9552 2.02804 55.0521 2.47343C55.149 2.91882 55.1328 3.38102 55.0049 3.8187C54.877 4.25638 54.6415 4.65589 54.3193 4.98151C54.0451 5.25051 53.7183 5.46131 53.3588 5.60099C52.9993 5.74067 52.6148 5.80628 52.2288 5.79382H52.2039C51.8166 5.78349 51.4312 5.85175 51.0716 5.99439C50.712 6.13702 50.3857 6.35101 50.1128 6.62316C49.84 6.89531 49.6265 7.21985 49.4853 7.57677C49.3442 7.93369 49.2784 8.31542 49.2922 8.69843C49.2922 8.67382 49.2922 8.67382 49.2922 8.69843Z" fill="url(#paint0_linear_410_393)"/>
+					<path d="M43.6934 8.69819C43.6797 9.15357 43.7803 9.60522 43.9862 10.0127C44.1921 10.4203 44.4969 10.771 44.8734 11.0335C45.2499 11.296 45.6862 11.4621 46.1435 11.517C46.6007 11.572 47.0646 11.514 47.4937 11.3482C47.9227 11.1824 48.3035 10.9141 48.6021 10.5671C48.9006 10.2202 49.1076 9.8055 49.2045 9.36011C49.3013 8.91472 49.2851 8.45252 49.1572 8.01484C49.0294 7.57716 48.7938 7.17765 48.4717 6.85203C48.1975 6.58303 47.8706 6.37223 47.5112 6.23255C47.1517 6.09288 46.7672 6.02726 46.3812 6.03973H46.3563C45.9711 6.04989 45.5879 5.98235 45.23 5.84121C44.872 5.70007 44.5469 5.48831 44.2745 5.21882C44.002 4.94933 43.7879 4.62778 43.6452 4.27377C43.5025 3.91975 43.4342 3.5407 43.4445 3.15973V3.13511C43.4582 2.67973 43.3576 2.22808 43.1517 1.82056C42.9458 1.41303 42.641 1.06234 42.2645 0.799823C41.888 0.537311 41.4517 0.371167 40.9944 0.316248C40.5372 0.261328 40.0733 0.319345 39.6443 0.48511C39.2152 0.650875 38.8344 0.919222 38.5358 1.26615C38.2373 1.61309 38.0303 2.02779 37.9334 2.47319C37.8366 2.91858 37.8528 3.38078 37.9807 3.81846C38.1085 4.25613 38.3441 4.65564 38.6662 4.98126C39.2386 5.54742 40.0101 5.81819 40.7567 5.79357H40.7816C41.169 5.78325 41.5543 5.8515 41.914 5.99414C42.2736 6.13678 42.5999 6.35077 42.8727 6.62292C43.1455 6.89507 43.3591 7.21961 43.5003 7.57653C43.6414 7.93345 43.7071 8.31518 43.6934 8.69819C43.7183 8.67357 43.7183 8.67357 43.6934 8.69819Z" fill="url(#paint1_linear_410_393)"/>
+					<defs>
+						<linearGradient id="paint0_linear_410_393" x1="43.7175" y1="5.91689" x2="55.1157" y2="5.91689" gradientUnits="userSpaceOnUse">
+							<stop offset="0.1" stop-color="#006E3B"/>
+							<stop offset="0.7" stop-color="#0C5B82"/>
+							<stop offset="1" stop-color="#11539F"/>
+						</linearGradient>
+						<linearGradient id="paint1_linear_410_393" x1="49.4423" y1="9.28896" x2="37.7856" y2="2.458" gradientUnits="userSpaceOnUse">
+							<stop offset="0.1" stop-color="#E31921"/>
+							<stop offset="0.2" stop-color="#E42721"/>
+							<stop offset="0.4" stop-color="#E63D22"/>
+							<stop offset="0.5" stop-color="#A8752F"/>
+							<stop offset="0.7" stop-color="#64B23E"/>
+							<stop offset="1" stop-color="#65B231"/>
+						</linearGradient>
+					</defs>
+				</svg>
+				</a>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item has-sublist">
+							<a href="solutions.html" class="menu__link">
+								<span>Решения</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 1L5 4.75L1.25 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<div class="menu__wrapper">
+								<div class="menu__container">
+									<div class="menu__left">
+										<a data-tab="solution1" class="active" href="solutions.html">Помещения</a>
+										<a data-tab="solution2" href="solutions.html">Мероприятия</a>
+										<a data-tab="solution3" href="solutions.html">Отрасли</a>
+										<a data-tab="solution4" href="solutions.html">Оборудование</a>
+										<a data-tab="solution5" href="solutions.html">Монтаж</a>
+										<a data-tab="solution6" href="solutions.html">Библиотека знаний</a>
+									</div>
+									<div data-content="solution1" class="menu__body target">
+										<a href="#">Переговорные комнаты</a>
+										<a href="#">Залы совещаний</a>
+										<a href="#">Конференц-залы</a>
+										<a href="#">Залы заседаний</a>
+										<a href="#">Актовые залы</a>
+										<a href="#">Фойе и холлы компаний</a>
+										<a href="#">Кабинет руководителя</a>
+										<a href="#">Лекционные залы</a>
+										<a href="#">Учебные аудитории</a>
+										<a href="#">Домашние кинотеатры</a>
+										<a href="#">Кафе | Рестораны | Бары</a>
+										<a href="#">Ситуационные центры</a>
+										<a href="#">Диспетчерские центры</a>
+										<a href="#">Современный офис</a>
+									</div>
+									<div data-content="solution2" class="menu__body">
+										<a href="#">Видеоконференция</a>
+										<a href="#">Конференция</a>
+										<a href="#">Выступления</a>
+										<a href="#">Презентация</a>
+									</div>
+									<div data-content="solution3" class="menu__body">
+										<a href="#">Медицинские учреждения</a>
+										<a href="#">Промышленность</a>
+										<a href="#">Образование</a>
+										<a href="#">Государственный сектор</a>
+										<a href="#">Гостиницы</a>
+										<a href="#">Корпоративный сектор</a>
+										<a href="#">Спортивные и фитнес залы</a>
+										<a href="#">Банки</a>
+									</div>
+									<div data-content="solution4" class="menu__body">
+										<a href="#">Аудио</a>
+										<a href="#">Аудиовизуальное</a>
+										<a href="#">Мультимедийное</a>
+										<a href="#">Видеостены</a>
+										<a href="#">Мультимедиа</a>
+										<a href="#">Озвучивание помещений</a>
+										<a href="#">Озвучивание территорий</a>
+									</div>
+									<div data-content="solution5" class="menu__body">
+										<a href="#">Проектор</a>
+										<a href="#">Проекционный экран</a>
+										<a href="#">Проекционное оборудование</a>
+										<a href="#">Интерактивные доски</a>
+										<a href="#">Видеостены</a>
+									</div>
+									<div data-content="solution6" class="menu__body">
+										<a href="#">Средства отображения информации</a>
+										<a href="#">Видеоконференцсвязь</a>
+										<a href="#">Конференц-системы</a>
+										<a href="#">Синхронный перевод</a>
+										<a href="#">Интерактивное голосование</a>
+										<a href="#">Звуковое оборудование</a>
+										<a href="#">BYOD устройства (Bring Your Own Device)</a>
+										<a href="#">Системы бронирования</a>
+										<a href="#">Digital Signage</a>
+										<a href="#">Коммутация</a>
+										<a href="#">Моторизованные шторы</a>
+										<a href="#">Централизованное управление (Умный дом)</a>
+										<a href="#">Специализированная мебель</a>
+										<a href="#">
+											Сценическое освещение
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu__item has-sublist">
+							<a href="brands.html" class="menu__link">
+								<span>Бренды</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 1L5 4.75L1.25 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>	
+							</a>
+							<div class="menu__wrapper">
+								<div class="menu__container">			
+									<div class="menu__left">
+
+										<a href="#" class="menu-main__item">
+											<img src="img/arrow.svg" alt="">
+											Бренды
+										</a>		
+
+										<a data-tab="brand1" class="active" href="brands.html">Проекторы</a>
+										<a data-tab="brand2" href="brands.html">Проекционные экраны</a>
+										<a data-tab="brand3" href="brands.html">Дисплейные решения</a>
+										<a data-tab="brand4" href="brands.html">Видеоконференцсвязь</a>
+										<a data-tab="brand5" href="brands.html">Звуковое оборудование</a>
+										<a data-tab="brand6" href="brands.html">Конгресс-системы</a>
+										<a data-tab="brand7" href="brands.html">Системы автомазиции</a>
+										<a data-tab="brand8" href="brands.html">Системы совместной работы</a>
+										<a data-tab="brand9" href="brands.html">Коммутация и кабели</a>
+									</div>
+
+									<div class="menu__search">
+										<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>	
+										<input type="text" placeholder="Поиск по сайту">							
+									</div>
+
+									<div data-content="brand1" class="menu__wrap target">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Проекторы Epson">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Проекторы Panasonic">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Проекторы Nec">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Проекторы Infocus">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Проекторы Eiki">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Проекторы Barco">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Проекторы Sony">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Проекторы Vivitek">
+										</a>
+									</div>
+									<div data-content="brand2" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Проекционные экраны Draper">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Проекционные экраны Da-Lite">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Проекционные экраны Projecta">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Проекционные экраны Digis">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Проекционные экраны Lumien">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Проекционные экраны Draper">
+										</a>
+									</div>
+									<div data-content="brand3" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Профессиональные панели EliteBoard">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Профессиональные панели Panasonic">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Профессиональные панели LG">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Профессиональные панели Samsung">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Профессиональные панели NEC">
+										</a>
+									</div>
+									<div data-content="brand4" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Видеоконференцсязь Polycom">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Видеоконференцсязь Cisco">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Видеоконференцсязь Yealink">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Видеоконференцсязь Lifesize">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Видеоконференцсязь Trueconf">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Видеоконференцсязь ClearOne">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Видеоконференцсязь Polycom">
+										</a>
+									</div>
+									<div data-content="brand5" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Звуковое оборудование Yamaha">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Звуковое оборудование JBL">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Звуковое оборудование Audac">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Звуковое оборудование Apart">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Звуковое оборудование Bose">
+										</a>
+									</div>
+									<div data-content="brand6" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Конгресс-системы Shure">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Конгресс-системы Televic">
+										</a>
+									</div>
+									<div data-content="brand7" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Системы автомазиции RTI">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Системы автомазиции и управление Crestron">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Системы автомазиции и управление AMX">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Системы автомазиции RTX">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Системы автомазиции GTX">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Системы автомазиции NEC">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Системы автомазиции Sony">
+										</a>
+									</div>
+									<div data-content="brand8" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Система совместной работы Barco">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Система совместной работы Kramer">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Система совместной работы Biamp">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Система совместной работы AMX">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Система совместной работы Vivitek">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Система совместной работы RTA">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Система совместной работы XSL">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Проекторы Epson">
+										</a>
+									</div>
+									<div data-content="brand9" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Коммутационное оборудование Extron">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Коммутационное оборудование ATEN">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Коммутационное оборудование Digis">
+										</a>
+									</div>	
+								</div>															
+							</div>
+						</li>
+						<li class="menu__item">
+							<a href="aboutus.html" class="menu__link"><span>О нас</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="portfolio.html" class="menu__link"><span>Портфолио</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="reviews.html" class="menu__link"><span>Отзывы</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="certificates.html" class="menu__link"><span>Сертификаты</span></a>
+						</li>				
+						<li class="menu__item">
+							<a href="contacts.html" class="menu__link"><span>Контакты</span></a>
+						</li>									
+					</ul>
+					<div class="menu__search">
+						<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>	
+						<input type="text" placeholder="Поиск по сайту">							
+					</div>
+				</nav>
+				<div class="header__actions">
+					<a href="tel:+74997033211" class="header__call">
+						<svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.3433 18.48L19.5833 16.24C19.885 15.9421 20.2667 15.7381 20.6821 15.6529C21.0975 15.5677 21.5287 15.6049 21.9233 15.76L24.6533 16.85C25.0521 17.0119 25.3941 17.2882 25.6361 17.6441C25.8781 18.0001 26.0094 18.4197 26.0133 18.85V23.85C26.011 24.1428 25.9494 24.4321 25.8324 24.7005C25.7153 24.9688 25.5452 25.2107 25.3321 25.4116C25.1191 25.6125 24.8677 25.7682 24.5929 25.8693C24.3181 25.9704 24.0257 26.0149 23.7333 26C4.60332 24.81 0.743317 8.61004 0.0133175 2.41004C-0.0205696 2.10558 0.0103921 1.79739 0.104166 1.50575C0.197939 1.21411 0.352399 0.945633 0.557385 0.717977C0.76237 0.49032 1.01323 0.308646 1.29348 0.184905C1.57372 0.0611637 1.87698 -0.00183916 2.18332 4.0869e-05H7.01332C7.44433 0.00131666 7.8651 0.131508 8.22151 0.37387C8.57793 0.616232 8.85369 0.959681 9.01332 1.36004L10.1033 4.09004C10.2636 4.48311 10.3045 4.91468 10.2209 5.33085C10.1373 5.74702 9.93292 6.12934 9.63332 6.43004L7.39332 8.67004C7.39332 8.67004 8.68332 17.4 17.3433 18.48Z" fill="white"/>
+						</svg>			
+						<span>
+							+7 (499) 703-32-11
+						</span>			
+					</a>
+					<div class="header__search">
+						<div class="header__search-body">
+							<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>								
+						</div>
+						<div class="header__search-wrapper">
+							<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="#3C3434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>	
+							<input type="text" placeholder="Поиск по сайту">	
+							<img class="search__close" src="img/equipment/close.svg" alt="">
+						</div>				
+					</div>
+					<div class="header__burger"><span></span></div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="main-equipment">
+				<img src="img/equipment/bg.jpg" alt="">
+				<div class="main-equipment__container">
+					<div class="breadcrumbs-white">
+						<a href="index.html">
+							Главная
+							<img src="img/about-us/arrow.svg" alt="">
+						</a>
+						<a href="index.html">
+							Помещения
+							<img src="img/about-us/arrow.svg" alt="">
+						</a>
+						<span>
+							Оборудование
+						</span>
+					</div>
+					<div class="main-equipment__content">
+						<div class="main-equipment__left">
+							<h1 class="main-equipment__title">
+								Оборудование переговорных комнат
+							</h1>
+							<div class="main-equipment__subtitle">
+								Оказываем весь спектр услуг по оснащению переговорных комнат: от поставки оборудования до монтажа
+							</div>
+							<div class="main-equipment__buttons">
+								<a data-topopup="#popup" href="#popup" class="main-equipment__button button">
+									<img src="img/main/button.svg" alt="">
+									Заказать проект
+								</a>			
+								<a href="#config" class="main-equipment__tocalc">
+									Калькулятор
+								</a>				
+							</div>
+						</div>
+						<div class="main-equipment__body">
+							<p><img src="img/equipment/check.svg" alt=""><span>Посчитаем КП за 1 день</span></p>
+							<p><img src="img/equipment/check.svg" alt=""><span>Участие в госзаказах 44-ФЗ и 223-ФЗ</span></p>
+							<p><img src="img/equipment/check.svg" alt=""><span>Более <a href="#">100 писем</a> благодарности</span></p>
+							<p><img src="img/equipment/check.svg" alt=""><span>Работаем по всей России</span></p>
+							<p><img src="img/equipment/check.svg" alt=""><span>15 лет опыта работы</span></p>
+							<p><img src="img/equipment/check.svg" alt=""><span>Более <a href="#">500 выполненных</a> проектов</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block services-block">
+				<div class="services-content">
+					<div class="services-content__container">
+						<div class="services-content__title">
+							Содержание раздела
+						</div>
+						<div class="services-content__links">
+							<a href="#equipment-services">Наши услуги и сервис</a>
+							<a href="#equipment">Оборудование для переговорных комнат</a>
+							<a href="#typeSolutions">Типовые решения переговорных комнат</a>
+							<a href="#rooms">Примеры реализованных переговорных комнат</a>
+							<a href="#equipment-reviews">Отзывы клиентов</a>
+							<a href="#steps">Этапы оборудования переговорных комнат</a>
+							<a href="#departure">Выезд инженера за пределы Москвы</a>
+							<a href="#knowledge">Что нужно знать об оборудовании переговорных комнат</a>
+							<a href="#equipment-benefits">Наши преимущества</a>
+							<a href="#about-company">О компании</a>
+						</div>
+					</div>					
+				</div>
+				<div class="main-equipment__body">
+					<p><img src="img/equipment/check.svg" alt=""><span>Посчитаем КП за 1 день</span></p>
+					<p><img src="img/equipment/check.svg" alt=""><span>Участие в госзаказах 44-ФЗ и 223-ФЗ</span></p>
+					<p><img src="img/equipment/check.svg" alt=""><span>Более 100 писем благодарности</span></p>
+					<p><img src="img/equipment/check.svg" alt=""><span>Работаем по всей России</span></p>
+					<p><img src="img/equipment/check.svg" alt=""><span>15 лет опыта работы</span></p>
+					<p><img src="img/equipment/check.svg" alt=""><span>Более 500 выполненных проектов</span></p>
+				</div>					
+				<div id="equipment-services"class="services equipment-services">
+					<div class="services__container">
+						<div class="direction__title title">
+							Наши услуги <nobr>и сервис</nobr>
+						</div>
+						<div class="service__swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/about-us/service1.svg" alt="">
+									<p>Аудит и консалтинг</p>
+									<span>Определяем цели и задачи помещения, выявляем потребности Заказчика и подбираем нужное оборудование.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service2.svg" alt="">
+									<p>Участие в тендерах, пишем ТЗ</p>
+									<span>Принимаем участие в торговых процедурах в рамках 44 и 223ФЗ. Готовим грамотное ТЗ в рамках Федеральных законах.</span>
+								</div>
+								<a href="#" class="swiper-slide">
+									<img src="img/about-us/service3.svg" alt="">
+									<p>Проектирование</p>
+									<span>Осуществляем предпроектное обследование и разработку ТЗ, РД и инструкциями по работе с системой для сотрудников.</span>
+								</a>
+								<div class="swiper-slide">
+									<img src="img/about-us/service4.svg" alt="">
+									<p>Акустика помещения</p>
+									<span>Комплекс работ по улучшению акустических характеристик помещения, в ходе которых производятся все необходимые измерения.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service5.svg" alt="">
+									<p>Поставка оборудования</p>
+									<span>Мы работаем через официальные каналы продаж ключевых вендоров, позволяющих нам поставить оборудование в срок и по наилучшим ценам.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service6.svg" alt="">
+									<p>Строительные работы</p>
+									<span>Комплексный подход является наиболее удобным для Заказчика, поскольку за организацию и результат всех этапов работ отвечает одна компания-подрядчик.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service7.svg" alt="">
+									<p>Монтаж оборудования</p>
+									<span>Высокая квалификация наших сотрудников является результатом значительного опыта за счёт постоянного повышения профессиональных навыков.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service8.svg" alt="">
+									<p>Пусконаладочные работы</p>
+									<span>Комплекс работ, выполняемых в период подготовки и проведения индивидуальных испытаний и комплексного опробования оборудования.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service9.svg" alt="">
+									<p>Сервисное обслуживание</p>
+									<span>Обслуживание оборудования для обеспечения штатного режима эксплуатации снижает вероятность выхода из строя оборудования.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service9.svg" alt="">
+									<p>Просмотр оборудования в демо-зале</p>
+									<span>Обслуживание оборудования для обеспечения штатного режима эксплуатации снижает вероятность выхода из строя оборудования.</span>
+								</div>
+
+							</div>	
+							<div class="service-pagination">
+								
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="equipment" class="equipment block">
+				<div class="equipment__container">
+					<div class="equipment__title title">
+						Оборудование для переговорных комнат
+					</div>
+					<div class="equipment__cards">
+						<div class="equipment__card">
+							<div class="equipment__image">
+								<img src="img/equipment/1.jpg" alt="">
+							</div>
+							<p>
+								<b>Системы отображения</b>
+								Цифровые презентации сегодня часто заменяют «живые» выступления. Удобство просмотра таких презентаций на большом экране легко реализуется с помощью огромного разнообразия технических средств (проекторы и экраны, интерактивные панели, телевизоры и аналогичные решения). При всем богатстве доступных it-технологий, окончательный выбор определяется бюджетом заказчика и требованиями, предъявляемыми к качеству и характеру контента.
+							</p>
+						</div>
+						<div class="equipment__card">
+							<div class="equipment__image">
+								<img src="img/equipment/2.jpg" alt="">
+							</div>
+							<p>
+								<b>Звуковые системы</b>
+								Системы для усиления речи позволят на протяжении всего совещания разборчиво и отчётливо слышать друг друга по всей площади переговорной комнаты. Качество звука в зале напрямую влияет не только на взаимопонимание, но и на общую атмосферу мероприятия. Согласитесь, выкрики из зала и гул одновременно говорящих участников не способствуют достижению консенсуса, о чем бы ни шла речь. Качественное оснащение звуковым оборудованием также сводит на нет фоновые шумы, усиливая и подчеркивая речь для точной передачи смысла.
+							</p>
+						</div>
+						<div class="equipment__card">
+							<div class="equipment__image">
+								<img src="img/equipment/3.jpg" alt="">
+							</div>
+							<p>
+								<b>Микрофоны, спикерфоны</b>
+								Спикерфон - устройство, предназначенное для усиления и взаимодействия голосовых сообщений между участниками локальных или удалённых дискуссий. Актуальные модели спикерфонов сегодня могут работать как отдельно, так и в комплекте конференц-систем, являясь частью сложного массива и архитектуры для связи между абонентами. В частных случаях спикерфон может совмещать в себе сразу несколько возможностей: связь с удаленными абонентами посредством системы для видеоконференцсвязи (вкс) и просто для связи по ip телефонии.
+							</p>
+						</div>
+					</div>
+					<div class="equipment__bottom">
+						<a href="#" class="equipment__more">
+							Показать еще
+							<img src="img/portfolio/arrow.svg" alt="">
+						</a>						
+					</div>
+				</div>
+			</div>
+			<div id="typeSolutions" class="solutions gray block">
+				<div class="solutions__container">
+					<div class="solutions__title title">
+						Типовые решения переговорных комнат
+					</div>
+					<div class="solutions__body">
+						<div class="solutions__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="solutions__image">
+										<img src="img/works/1.jpg" alt="">
+									</div>
+									<div class="solutions__content">
+										<p>
+											Маленькая переговорная комната
+										</p>
+										<span>
+											Небольшая переговорная комната, оборудованная для малых конференц-встреч и совещаний в узком кругу людей. Позволит пользоваться аудиовизуальными материалами и проводить сеансы видеосвязи (ВКС). Оснащается проектором и экраном или телевизором с большой диагональю, иногда дополняется звуковыми системами.
+										</span>
+										<a href="#">
+											<b>Заказать</b>
+											от 150 000 ₽
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="solutions__image">
+										<img src="img/works/2.jpg" alt="">
+									</div>
+									<div class="solutions__content">
+										<p>
+											Средняя переговорная комната
+										</p>
+										<span>
+											Переговорная комната вместимостью 5-15 участников для осуществления звонков по видеоконференцсвязи (ВКС), проведения презентаций на интерактивной панели со встроенными акустическими громкоговорителями и поворотной PTZ-камерой. Возможно дополнить системой для конференц-связи.
+										</span>
+										<a href="#">
+											<b>Заказать</b>
+											от 500 000 ₽
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="solutions__image">
+										<img src="img/works/3.jpg" alt="">
+									</div>
+									<div class="solutions__content">
+										<p>
+											Большая переговорная комната
+										</p>
+										<span>
+											Это решение подойдет для проведения комфортных совещаний и совместных конференц-встреч руководящих лиц и топ-менеджмента. Оснащение включает в себя большую видеостену, систему конференц-связи (набор цифровых микрофонов) и возможностью беспроводного подключения любых дополнительных гаджетов.
+										</span>
+										<a href="#">
+											<b>Заказать</b>
+											от 1 000 000 ₽
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="solutions__image">
+										<img src="img/works/4.jpg" alt="">
+									</div>
+									<div class="solutions__content">
+										<p>
+											Маленькая переговорная комната
+										</p>
+										<span>
+											Небольшая переговорная комната, оборудованная для малых конференц-встреч и совещаний в узком кругу людей. Позволит пользоваться аудиовизуальными материалами и проводить сеансы видеосвязи (ВКС). Оснащается проектором и экраном или телевизором с большой диагональю, иногда дополняется звуковыми системами.
+										</span>
+										<a href="#">
+											<b>Заказать</b>
+											от 150 000 ₽
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="solutions__image">
+										<img src="img/works/5.jpg" alt="">
+									</div>
+									<div class="solutions__content">
+										<p>
+											Средняя переговорная комната
+										</p>
+										<span>
+											Переговорная комната вместимостью 5-15 участников для осуществления звонков по видеоконференцсвязи (ВКС), проведения презентаций на интерактивной панели со встроенными акустическими громкоговорителями и поворотной PTZ-камерой. Возможно дополнить системой для конференц-связи.
+										</span>
+										<a href="#">
+											<b>Заказать</b>
+											от 500 000 ₽
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="solutions__image">
+										<img src="img/works/6.jpg" alt="">
+									</div>
+									<div class="solutions__content">
+										<p>
+											Большая переговорная комната
+										</p>
+										<span>
+											Это решение подойдет для проведения комфортных совещаний и совместных конференц-встреч руководящих лиц и топ-менеджмента. Оснащение включает в себя большую видеостену, систему конференц-связи (набор цифровых микрофонов) и возможностью беспроводного подключения любых дополнительных гаджетов.
+										</span>
+										<a href="#">
+											<b>Заказать</b>
+											от 1 000 000 ₽
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="solutions__image">
+										<img src="img/works/7.jpg" alt="">
+									</div>
+									<div class="solutions__content">
+										<p>
+											Большая переговорная комната
+										</p>
+										<span>
+											Это решение подойдет для проведения комфортных совещаний и совместных конференц-встреч руководящих лиц и топ-менеджмента. Оснащение включает в себя большую видеостену, систему конференц-связи (набор цифровых микрофонов) и возможностью беспроводного подключения любых дополнительных гаджетов.
+										</span>
+										<a href="#">
+											<b>Заказать</b>
+											от 1 000 000 ₽
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="solutions__pagination"></div>
+						</div>						
+						<div class="solutions__prev">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>							
+						</div>
+						<div class="solutions__next">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="rooms" class="rooms block">
+				<div class="rooms__container">
+					<div class="rooms__top">
+						<div class="rooms__title title">
+							Примеры реализованных переговорных комнат
+						</div>	
+						<a href="#">
+							Все проекты
+						</a>					
+					</div>
+					<div class="rooms__body">
+						<div class="rooms__slider swiper">
+							<div class="swiper-wrapper">
+								<a href="#" class="swiper-slide">
+									<div class="rooms__image">
+										<img src="img/equipment/room.jpg" alt="">
+										<small>
+											Москва
+										</small>
+										<p>
+											Оборудование переговорной комнаты
+										</p>
+										<span>
+											#типовые проекты и решения переговорных #решения для переговорных #системы отображения #системы ВКС #системы для управления в переговорных #системы boyd #системы коммутации #управление системами
+										</span>
+									</div>
+									<div class="rooms__name">
+										Федеральный научный центр М. П. Чумакова РАН
+									</div>
+								</a>
+								<a href="#" class="swiper-slide">
+									<div class="rooms__image">
+										<img src="img/works/1.jpg" alt="">
+										<small>
+											Москва
+										</small>
+										<p>
+											Оборудование переговорной комнаты
+										</p>
+										<span>
+											#типовые проекты и решения переговорных #решения для переговорных #системы отображения #системы ВКС #системы для управления в переговорных #системы boyd #системы коммутации #управление системами
+										</span>
+									</div>
+									<div class="rooms__name">
+										Федеральный научный центр М. П. Чумакова РАН
+									</div>
+								</a>
+								<a href="#" class="swiper-slide">
+									<div class="rooms__image">
+										<img src="img/works/2.jpg" alt="">
+										<small>
+											Москва
+										</small>
+										<p>
+											Оборудование переговорной комнаты
+										</p>
+										<span>
+											#типовые проекты и решения переговорных #решения для переговорных #системы отображения #системы ВКС #системы для управления в переговорных #системы boyd #системы коммутации #управление системами
+										</span>
+									</div>
+									<div class="rooms__name">
+										Федеральный научный центр М. П. Чумакова РАН
+									</div>
+								</a>
+								<a href="#" class="swiper-slide">
+									<div class="rooms__image">
+										<img src="img/works/3.jpg" alt="">
+										<small>
+											Москва
+										</small>
+										<p>
+											Оборудование переговорной комнаты
+										</p>
+										<span>
+											#типовые проекты и решения переговорных #решения для переговорных #системы отображения #системы ВКС #системы для управления в переговорных #системы boyd #системы коммутации #управление системами
+										</span>
+									</div>
+									<div class="rooms__name">
+										Федеральный научный центр М. П. Чумакова РАН
+									</div>
+								</a>
+							</div>
+							<div class="rooms__pagination">
+							</div>
+						</div>
+						<div class="rooms__prev">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>							
+						</div>
+						<div class="rooms__next">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>							
+						</div>
+					</div>
+					<a href="#">
+						Все проекты
+					</a>
+					<div class="rooms__costs">
+						<p>
+							Узнайте стоимость проекта за 30 секунд
+						</p>
+						<form action="#" class="rooms__form">
+							<input type="text" placeholder="Имя">
+							<input type="tel" placeholder="Телефон" required>
+							<button class="button">
+								<img src="img/main/button.svg" alt="">
+								Заказать проект
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<section id="equipment-reviews" class="reviews equipment-reviews reviews-other gray block">
+				<div class="reviews__container">
+					<div class="reviews__top">
+						<h4 class="reviews__title title">
+							Отзывы довольных клиентов
+						</h4>		
+						<a href="reviews.html">Показать все отзывы</a>						
+					</div>
+					<div class="reviews__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="reviews__img">
+									<img src="img/reviews/1.png" alt="">
+								</div>
+								<p>
+									<b>Элтеза</b>
+									Декабрь 2018
+								</p>
+								<a href="#">
+									Посмотреть проект
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<div class="reviews__img">
+									<img src="img/reviews/1.png" alt="">
+								</div>
+								<p>
+									<b>Московский комитет ветеранов</b>
+									Декабрь 2018
+								</p>
+								<a href="#">
+									Посмотреть проект
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<div class="reviews__img">
+									<img src="img/reviews/1.png" alt="">
+								</div>
+								<p>
+									<b>Элтеза</b>
+									Декабрь 2018
+								</p>
+								<a href="#">
+									Посмотреть проект
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<div class="reviews__img">
+									<img src="img/reviews/1.png" alt="">
+								</div>
+								<p>
+									<b>Элтеза</b>
+									Декабрь 2018
+								</p>
+								<a href="#">
+									Посмотреть проект
+								</a>
+							</div>
+						</div>
+						<div class="reviews-other__pagination"></div>					
+					</div>
+					<a href="#">
+						Показать все отзывы
+					</a>	
+				</div>
+			</section>
+			<div class="block">
+				<div id="steps" class="steps">
+					<div class="steps__container">
+						<div class="steps__title title">
+							Этапы оборудования переговорных комнат
+						</div>
+						<div class="steps__body">
+							<div class="steps__left">
+								<div class="steps__row active">
+									<div class="steps__count">
+										<span>1</span>
+									</div>
+									<div class="steps__p">
+										<b>
+											Выезд специалистов на объект
+										</b>
+										<div class="steps__span">Первым и обязательным этапом работы является осмотр объекта будущей переговорной. Специалисты оценивают обстановку интерьера и отделку, формы и размеры помещения, имеющиеся коммуникации и возможности прокладывания новых, выполняется анализ несущей способности настенных или потолочных поверхностей и перекрытий с целью дальнейшего монтажа различных систем. Уже на этом этапе наши специалисты могут подобрать предварительный перечень аппаратуры и предложить описание нескольких вариантов исполнения проекта.</div>
+									</div>
+								</div>
+								<div class="steps__row">
+									<div class="steps__count">
+										<span>2</span>
+									</div>
+									<div class="steps__p">
+										<b>
+											Проектирование
+										</b>
+										<div class="steps__span">Этап проектирования заключается в составлении сначала предварительного, а затем и окончательного проекта. Создание проектной документации включает разработку компоновки и дизайн-проекта, необходимые расчеты, схемы коммуникаций и схемы по монтажу компонентов и т.д. После согласования проектной документации с заказчиком начинается процесс реализации проекта.</div>
+									</div>
+								</div>
+								<div class="steps__row">
+									<div class="steps__count">
+										<span>3</span>
+									</div>
+									<div class="steps__p">
+										<b>
+											Поставка оборудования
+										</b>
+										<div class="steps__span">Прямые контракты с производителями позволяют давать наилучшие цены и условия на рынке. Собственная служба логистики осуществит доставку на любые расстояния и в кратчайшие сроки, чтобы не прерывать сроки реализации проекта. Выгода от покупки товара у нас очевидна!</div>
+									</div>
+								</div>
+								<div class="steps__row">
+									<div class="steps__count">
+										<span>4</span>
+									</div>
+									<div class="steps__p">
+										<b>
+											Монтаж
+										</b>
+										<div class="steps__span">На этапе монтажа осуществляется установка и все необходимые подключения всех узлов и модулей согласно проектной документации. В ряде случаев особенности конструкции или конфигурации помещения выявляются только на этапе ремонта помещения, что требует оперативной разработки альтернативного варианта прокладки коммуникаций или монтажа. Для профессиональных интеграторов, впрочем, эти нюансы являются рабочими моментами и не вызывают сложностей.</div>
+									</div>
+								</div>
+								<div class="steps__row">
+									<div class="steps__count">
+										<span>5</span>
+									</div>
+									<div class="steps__p">
+										<b>
+											Приемка и сдача объекта в эксплуатацию
+										</b>
+										<div class="steps__span">Оборудование готовой переговорной комнаты тщательно проверяется. Тестируются как аппаратные, так и программные ресурсы, выполняется проверка различных режимов работы всего комплекса. По окончании тестирования объект сдается заказчику, даются рекомендации по эксплуатации и осуществляется обучение персонала к пользованию всего состава оборудования.</div>
+									</div>
+								</div>
+								<div class="steps__row blue">
+									<div class="steps__count">
+										<span><img src="img/equipment/checked.svg" alt=""></span>
+									</div>
+									<div class="steps__p">
+										<b>
+											Итог
+										</b>
+										<div class="steps__span">В результате грамотного проектирования, монтажа и наладки оборудования переговорной или конференц-зала профессионалами своего дела заказчик получает многофункциональное интерактивное пространство, пригодное для проведения совещаний, переговоров, конференц-встреч, обсуждений и различных процедурных мероприятий.</div>
+									</div>
+								</div>
+							</div>		
+							<div class="steps__aside">
+								<p>
+									Нужна консультация?
+								</p>
+								<span>
+									Подберем для вас лучшие варианты для  вашей переговорной комнаты, расскажем все нюансы и определим сроки реализации.
+								</span>
+								<a href="#" data-topopup="#popup">
+									<img src="img/main/button.svg" alt="">
+									Заказать Консультацию
+								</a>
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div id="departure" class="departure">
+					<div class="departure__container">
+						<div class="departure__title title">
+							Бесплатный выезд инженера по Москве и области
+						</div>
+						<form action="#" class="rooms__form departure__form">
+							<input type="text" placeholder="Имя">
+							<input type="tel" placeholder="Телефон" required>
+							<button class="button">
+								<img src="img/main/button.svg" alt="">
+								Заказать проект
+							</button>
+						</form>
+						<div class="departure__table-title">
+							Выезд инженера <a href="#">за пределы Москвы</a>
+						</div>
+						<div class="departure__table hidden">
+							<table>
+								<thead>
+									<tr>
+										<th>
+											Город
+										</th>
+										<th>
+											Цена, руб.
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p>Владимир</p>  
+											<p>Калуга</p>
+											<p>Переславль-Залесский </p>
+											<p>Рязань</p>
+											<p>Ростов Великий</p>
+											<p>Сергиев Посад </p>
+											<p>Суздаль</p> 
+											<p>Тверь</p> 
+											<p>Тула</p> 
+											<p>Углич</p> 											
+										</td>
+										<td>
+											<b>от 2 500</b> руб.
+										</td>
+									</tr>
+									<tr class="rows-hide hide">
+										<td>
+											<p>Брянск </p>  
+											<p>Вологда </p>
+											<p>Иваново </p>
+											<p>Кострома </p>
+											<p>Липецк</p>
+											<p>Нижний Новгород </p>
+											<p>Орел </p> 
+											<p>Смоленск </p> 
+											<p>Тамбов</p>
+											<p>Череповец </p>
+											<p>Ярославль </p>										
+										</td>
+										<td>
+											<b>от 3 000</b> руб.
+										</td>
+									</tr>	
+									<tr class="rows-hide hide">
+										<td>
+											<p>Белгород</p>  
+											<p>Воронеж</p>
+											<p>Волгоград </p>
+											<p>Волжский</p>
+											<p>В. Новгород</p>
+											<p>Йошкар-Ола</p>
+											<p>Киров</p> 
+											<p>Курск </p> 
+											<p>Пенза</p> 
+											<p>Саранск</p> 	
+											<p>Санкт-Петербург</p>
+											<p>Саратов</p>
+											<p>Казань</p>
+											<p>Псков</p>
+											<p>Тольятти </p>
+											<p>Ульяновск</p>
+											<p>Чебоксары</p>
+											<p>Челябинск</p>										
+										</td>
+										<td>
+											<b>от 5 500</b> руб.
+										</td>
+									</tr>
+									<tr class="rows-hide hide">
+										<td>
+											<p>Архангельск </p>  
+											<p>Астрахань</p>
+											<p>Ижевск </p>
+											<p>Калининград </p>
+											<p>Краснодар</p>
+											<p>Наб. Челны </p>
+											<p>Петрозаводск</p> 
+											<p>Ростов-на Дону </p> 
+											<p>Пермь</p> 
+											<p>Самара </p> 		
+											<p>Ставрополь</p> 
+											<p>Сыктывкар</p> 
+											<p>Стерлитамак</p> 
+											<p>Уфа </p> 		
+											<p>Черкесск</p>
+											<p>Элиста</p>						
+										</td>
+										<td>
+											<b>от 6 500</b> руб.
+										</td>
+									</tr>
+									<tr class="rows-hide hide">
+										<td>
+											<p>Балашиха</p>  
+											<p>Владикавказ</p>
+											<p>Грозный</p>
+											<p>Екатеринбург</p>
+											<p>Липецк</p>
+											<p>Магнитогорск</p>
+											<p>Магас</p> 
+											<p>Махачкала</p> 
+											<p>Мурманск</p> 
+											<p>Нальчик</p> 
+											<p>Нижний Тагил</p>
+											<p>Оренбург </p>
+											<p>Сочи</p>
+											<p>Челябинск</p>
+										</td>
+										<td>
+											<b>от 8 500</b> руб.
+										</td>
+									</tr>
+									<tr class="rows-hide hide" >
+										<td>
+											<p>Курган </p>  
+											<p>Омск </p>
+											<p>Сургут</p>
+											<p>Тюмень </p>
+											<p>Ханты-Мансийск </p>										
+										</td>
+										<td>
+											<b>от 8 500</b> руб.
+										</td>
+									</tr>									
+									<tr class="rows-hide hide">
+										<td>
+											<p>Барнаул</p>  
+											<p>Горно-Алтайск</p>
+											<p>Барнаул</p>
+											<p>Горно-Алтайск</p>
+											<p>Новокузнецк</p>
+											<p>Томск</p>									
+										</td>
+										<td>
+											<b>от 2 500</b> руб.
+										</td>
+									</tr>		
+									<tr class="rows-hide hide">
+										<td>
+											<p>Абакан </p>  
+											<p>Иркутск </p>
+											<p>Красноярск</p>
+											<p>Кызыл </p>
+											<p>Улан-Удэ</p>
+											<p>Чита </p>									
+										</td>
+										<td>
+											<b>от 13 500</b> руб.
+										</td>
+									</tr>									
+									<tr class="rows-hide hide">
+										<td>
+											<p>Биробиджан </p>  
+											<p>Благовещенск</p>
+											<p>Владивосток</p>
+											<p>Магадан</p>
+											<p>Хабаровск</p>
+											<p>Южно-Сахалинск</p>
+											<p>Якутск</p> 
+											<p></p> 
+											<p></p> 
+											<p></p> 											
+										</td>
+										<td>
+											<b>от 15 500</b> руб.
+										</td>
+									</tr>		
+								</tbody>
+								<tfoot>
+									<td colspan="2">
+										<p data-original="показать Все города" data-hide="свернуть" class="rows-toggle">
+											<span>показать Все города</span>
+											<img src="img/portfolio/arrow.svg" alt="">
+										</p>
+									
+									</td>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div id="knowledge" class="knowledge">
+					<div class="knowledge__container">
+						<div class="knowledge__title">
+							Что нужно знать об оборудовании переговорных комнат
+						</div>
+						<div class="knowledge__text">
+							Неотъемлемой частью ведения бизнеса являются переговоры с партнерами и контрагентами, исход которых может напрямую повлиять на деятельность компании. Достижение успеха в ходе переговоров зависит от множества факторов, в том числе и от места их проведения. Современные офисы в компаниях в большинстве случаев располагают переговорными комнатами или конференц-залами, которые используются для проведения деловых встреч с презентациями, а также для внутренних тренингов и собраний. Ключевое отличие переговорных комнат от обычных аудиторий или кабинетов (которые, конечно, тоже можно использовать в качестве переговорных) заключается в современном техническом оснащении и грамотном проектировании мультимедиа решений.
+						</div>
+						<div class="knowledge__text">
+							Оснастить переговорную комнату современным оборудованием означает не только оптимизировать способы передачи информации во время обсуждений, но и вывести ход переговоров на более высокий уровень, а главное - повысить статус Вашей организации в глазах контрагентов. Концепция деятельности компании заключается в создании решений для инновационных и передовых переговорных комнат. Для достижения наилучших результатов - мы используем только лучшие и проверенные решения современной техники.
+						</div>
+						<a class="knowledge__more" href="#">
+							<span>Подробнее</span>
+							<img src="img/portfolio/arrow.svg" alt="">
+						</a>
+						<div class="knowledge__body">
+							<div class="knowledge__title">
+								Задачи переговорных комнат
+							</div>
+							<div class="knowledge__subtitle">
+								Совещания и деловые корпоративные встречи подразумевают интенсивное и, возможно, длительное общение нескольких человек. Причем ошибки в интерпретации сказанного недопустимы. Следовательно, наиболее важная задача, которую позволяет решить переговорная комната – обеспечение максимально точной передачи речи всех присутствующих в помещении не в зависимости от места и угла расположения. На первый взгляд это может выглядеть как преувеличение. В конце концов, люди и так сидят за одним столом, что тут еще обеспечивать? Однако надо понимать, что в реальности речь человека, сидящего очень близко, всего в нескольких метрах от Вас, уже может оказаться недостаточно разборчивой как для Вас, так и для участников в удалённых переговорных комнатах
+							</div>
+							<div class="knowledge__blockquote">
+								<div class="knowledge__person">
+									<img src="img/equipment/person.png" alt="">
+								</div>
+								<div class="knowledge__quote">
+									<img src="img/equipment/quote.svg" alt="">
+									<p>"Учтите и речевые особенности каждого конкретного человека, которые могут существенно осложнить восприятие, особенно, если человек Вам малознаком или говорит "себе под нос". Задача хорошо оснащенной переговорной или конференц-зала – минимизировать все эти нюансы, сделав восприятие информации как можно более простым."</p>
+								</div>
+							</div>
+							<div class="knowledge__block">
+								<div class="knowledge__left">
+									<div class="knowledge__title">
+										Другая не менее важная задача – обмен информацией.
+									</div>
+									<p>
+										Документы, презентации, отчеты, учебные видеоматериалы и другой контент должны быть доступны всем участникам. Обычно это достигается использованием большого экрана, на котором отображаются все материалы, относящиеся к теме переговоров. 
+									</p>
+								</div>
+								<p>
+									<b>Возможность быстро загрузить необходимую информацию</b> и отобразить ее для всех присутствующих – это важный фактор, который обязательно учитывается при проектировании переговорной. Кроме того, сегодня набирает популярность решений BYOD – Bring Your Own Device, согласно которому каждый участник должен иметь возможность продемонстрировать материалы со своего собственного устройства (смартфона, ноутбука) не отходя от места и не прибегая к кабельным соединениям, таким как hdmi, vga и другие.
+									<br><br>
+									П<b>омимо просмотра материалов, переговоры часто ведутся в интерактивном формате.</b> В документы вносятся правки, предлагаются изменения, осуществляется то или иное манипулирование материалами. Например, обсуждение контракта может потребовать оперативного внесения изменений в какие-то пункты документа и согласования этих изменений с юристами сторон. Внесение «домашних» правок и повторный созыв переговоров не всегда удобен. Именно поэтому сегодня в большинстве компаний переговорным комнатам ставится задача обеспечения интерактивного взаимодействия и возможностей рецензирования и редактуры документации.
+									<br><br>
+									<b>Система видеоконференцсвязи (вкс)</b> уже не нова, и часто служит полноценной заменой «живым» переговорам. В этой связи важно отметить следующее: задачей оборудования переговорной комнаты является не просто организовать связь двух точек, но еще и сделать эту связь максимально бесшовной.
+								</p>
+							</div>
+							<div class="knowledge__format">
+								<div class="knowledge__title">
+									Форматы переговорных комнат
+								</div>
+								<div class="knowledge__text">
+									Спектр решаемых задач определяет и подход к оборудованию. Хотя в названии и имеется слово «комнаты», не стоит думать, что переговорная комната – это обязательно небольшое помещение. Все зависит от потенциального числа участников, характера обсуждаемых вопросов и даже от статуса компании. Существует несколько традиционных вариантов планировки переговорной.
+								</div>
+							</div>
+							<div class="knowledge__items">
+								<div class="knowledge__item">
+									<p>
+										Классический вариант – стол в центре комнаты. 
+									</p>
+									<span>
+										Участники совещания располагаются по обе длинные стороны стола, а также вдоль одной из коротких сторон. На противоположной стене устанавливается проекционный экран или дисплей большой диагонали для демонстрации мультимедиа материалов. Перед каждым участником устанавливается отдельный микрофонный пульт от конференц-системы для лучшей слышимости. Такая компоновка удобна при относительно небольшом числе участников. Она не требует много пространства, а само помещение сохраняет универсальность.
+									</span>
+								</div>
+								<div class="knowledge__item">
+									<p>
+										Формат круглого стола
+									</p>
+									<span>
+										Круглый стол в первую очередь предполагает увеличение количества участников и удобен тем, что подчеркивает равноправие всех сотрудников компании и обеспечивает более удобное общение в формате дискуссии. Для просмотра относящихся к теме материалов в этом случае чаще устанавливают видеоотображающие устройства в центральной части стола, т.к. классическое расположение видеоотображающего устройства на стене вынуждает участников, сидящих к нему спиной, разворачиваться в кресле. 
+									</span>
+								</div>
+								<div class="knowledge__item">
+									<p>
+										Компоновка «виртуальный стол» 
+									</p>
+									<span>
+										Этот подход стирает грань между участниками компании, находящимися в переговорных комнатах и удаленными, находящимися в другой зоне, другом помещении, в другом городе или стране. Основной упор в оборудовании такой переговорной комнаты следует делать на выбор видеоконференцсвязи, обеспечивающей безупречную передачу голосовой и визуальной информации между всеми участниками видеоконференции.
+									</span>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="equipment-benefits" class="our-services equipment-benefits">
+					<div class="our-services__container">
+						<h3 class="our-services__title title">
+							Наши преимущества
+						</h3>
+					</div>
+						<div class="our-services__items">
+							<div class="our-services__item active">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit1.svg" alt="">
+										Бесплатный выезд на объект
+									</p>
+									<span class="active">
+										Мы предлагаем бесплатный выезд нашего специалиста на объект для осмотра и обсуждения технических вопросов на месте.
+									</span>									
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit2.svg" alt="">
+										Модернизация оборудования
+									</p>
+									<span>
+										Если вы хотите частично заменить уже существующее оборудование, наши специалисты внедрят оптимальный вариант
+									</span>
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit3.svg" alt="">
+										Нет рекламаций
+									</p>
+									<span>
+										За долгие годы работы наша компания не получила ни одной рекламации
+									</span>
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit4.svg" alt="">
+										Лицензии на выполнение работ
+									</p>
+									<span>
+										Наша компания обладает всеми необходимыми лицензиями на все виды работ, выполняемыми нашей компанией
+									</span>
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit5.svg" alt="">
+										На рынке свыше 10 лет
+									</p>
+									<span>
+										Наш слаженный коллектив мотивирован на достижение высокого результата, а десятилетний опыт служит дополнительной гарантией
+									</span>
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit6.svg" alt="">
+										Решения "под ключ"
+									</p>
+									<span>
+										Мы предлагаем нашим клиентам комплексный подход: от консультации и проектирования до полной инсталляции и обучения персонала
+									</span>
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit7.svg" alt="">
+										Положительная репутация
+									</p>
+									<span>
+										Отличная репутация нашей компании подтверждены многочисленными сертификатами и письмами благодарности от довольных заказчиков
+									</span>
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit8.svg" alt="">
+										Штат сотрудников
+									</p>
+									<span>
+										В нашей компании работают только квалифицированные и сертифицированные специалисты: от проектировщиков до инженеров.
+									</span>
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit9.svg" alt="">
+										Выполнено свыше 500 проектов
+									</p>
+									<span>
+										Наше портфолио насчитывает свыше 500 выполненных проектов
+									</span>
+								</div>
+							</div>
+							<div class="our-services__item">
+								<div class="our-services__container">
+									<p>
+										<img src="img/equipment/benefit10.svg" alt="">
+										Работаем по всей России
+									</p>
+									<span>
+										Работаем с частными лицами, с государственными и коммерческими организациями на всей территории РФ.
+									</span>
+								</div>
+							</div>										
+						</div>	
+				</div>		
+				<div id="about-company" class="about-company">
+					<div class="about-company__container">
+						<div class="about-company__title title">
+							О компании
+						</div>
+						<div class="company__content">
+							<div class="company__left">
+								<div class="company__video" data-topopup="#video-popup">
+									<img src="img/equipment/company.jpg" alt="">
+									<div class="company__controls">
+										<div id="companyPlay" class="company__controls-image">
+											<svg width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M31.5 16.1865C33.5 17.3412 33.5 20.228 31.5 21.3827L4.5 36.9711C2.5 38.1258 1.26184e-07 36.6825 2.27131e-07 34.3731L1.58992e-06 3.19615C1.69086e-06 0.886751 2.5 -0.556624 4.5 0.598077L31.5 16.1865Z" fill="#3F69FF"/>
+											</svg>
+										</div>
+										<p>
+											Презентация<br> компании 
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="company__text">
+								<b>Начиная с 2007 года нашими специалистами было реализованно более 500 готовых объектов</b>
+								<br><br>
+								Группа компаний Айтек предлагает весь спектр услуг по оснащению залов совещаний - консультация и аудит, проектирование, поставка оборудования и мебели, акустический расчёт, строительно-монтажные и пусконаладочные работы. 
+								<br><br>
+								Мы предоставляем свои услуги интеграции на всей территории Российской Федерации как коммерческим организациям, так и государственному сектору.
+								<a href="#">
+									<img src="img/certificates/pdf.png" alt="">
+									скачать презентацию
+								</a>
+							</div>
+						</div>						
+					</div>
+				</div>			
+			</div>
+			<div class="block gray faq">
+				<div class="faq__container">
+					<div class="faq__title title">
+						Вопрос-ответ
+					</div>
+					<div class="faq__cards">
+						<div class="faq__card">
+							<div class="faq__top">
+								<div class="faq__name">
+									Зачем нам нужна информация о вашей компании?
+								</div>
+								<div class="faq__button">
+									<span></span>
+								</div>
+							</div>
+							<div class="faq__body">
+								Расширение гарантии до 4−5 лет обычно стоит в диапазоне 4−8% от стоимости продукта. Сервисное сопровождение проекта после его реализации является не обязательным, но рекомендованным. Тут как с автомобилем — если вы не осуществляете регламентированное ТО автомобиля, то срок его эксплуатации сокращается. 
+								<br><br>
+								Обычно сервисное сопровождение проекта стоит от 6 до 10% от стоимости проекта. регламентированное ТО автомобиля, то срок его эксплуатации сокращается. 
+							</div>
+						</div>
+						<div class="faq__card">
+							<div class="faq__top">
+								<div class="faq__name">
+									Почему стоит купить оборудование у нас, а не в магазине бытовой техники?
+								</div>
+								<div class="faq__button">
+									<span></span>
+								</div>
+							</div>
+							<div class="faq__body">
+								Расширение гарантии до 4−5 лет обычно стоит в диапазоне 4−8% от стоимости продукта. Сервисное сопровождение проекта после его реализации является не обязательным, но рекомендованным. Тут как с автомобилем — если вы не осуществляете регламентированное ТО автомобиля, то срок его эксплуатации сокращается. 
+								<br><br>
+								Обычно сервисное сопровождение проекта стоит от 6 до 10% от стоимости проекта. регламентированное ТО автомобиля, то срок его эксплуатации сокращается. 
+							</div>
+						</div>
+						<div class="faq__card">
+							<div class="faq__top">
+								<div class="faq__name">
+									Сколько стоит дополнительная гарантия и сервисное сопровождение проекта?
+								</div>
+								<div class="faq__button">
+									<span></span>
+								</div>
+							</div>
+							<div class="faq__body">
+								Расширение гарантии до 4−5 лет обычно стоит в диапазоне 4−8% от стоимости продукта. Сервисное сопровождение проекта после его реализации является не обязательным, но рекомендованным. Тут как с автомобилем — если вы не осуществляете регламентированное ТО автомобиля, то срок его эксплуатации сокращается. 
+								<br><br>
+								Обычно сервисное сопровождение проекта стоит от 6 до 10% от стоимости проекта. регламентированное ТО автомобиля, то срок его эксплуатации сокращается. 
+							</div>
+						</div>
+						<div class="faq__card">
+							<div class="faq__top">
+								<div class="faq__name">
+									Зачем нам нужна информация о вашей компании?
+								</div>
+								<div class="faq__button">
+									<span></span>
+								</div>
+							</div>
+							<div class="faq__body">
+								Расширение гарантии до 4−5 лет обычно стоит в диапазоне 4−8% от стоимости продукта. Сервисное сопровождение проекта после его реализации является не обязательным, но рекомендованным. Тут как с автомобилем — если вы не осуществляете регламентированное ТО автомобиля, то срок его эксплуатации сокращается. 
+								<br><br>
+								Обычно сервисное сопровождение проекта стоит от 6 до 10% от стоимости проекта. регламентированное ТО автомобиля, то срок его эксплуатации сокращается. 
+							</div>
+						</div>
+						<div class="faq__card">
+							<div class="faq__top">
+								<div class="faq__name">
+									Какая минимальная сумма проекта?
+								</div>
+								<div class="faq__button">
+									<span></span>
+								</div>
+							</div>
+							<div class="faq__body">
+								Расширение гарантии до 4−5 лет обычно стоит в диапазоне 4−8% от стоимости продукта. Сервисное сопровождение проекта после его реализации является не обязательным, но рекомендованным. Тут как с автомобилем — если вы не осуществляете регламентированное ТО автомобиля, то срок его эксплуатации сокращается.
+								<br><br>
+								<ul>
+									<li>Vitae tenetur quaerat minus numquam iure eligendi, consectetur dolore deserunt aliquid! Temporibus, sunt! Architecto at dolorem dolor? Doloribus nam, nisi!</li>
+									<li>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Iste, accusamus.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block articles">
+				<div class="articles__container">
+					<div class="articles__top">
+						<div class="articles__title title">
+							Полезные статьи
+						</div>
+						<a href="#">Все статьи</a>
+					</div>
+					<div class="articles__body">
+						<a href="#" class="articles__card">
+							<div class="article__bg">
+								<img src="img/equipment/1.jpg" alt="">
+							</div>
+							<div class="articles__name">
+								Системы отображения информации
+							</div>
+							<div class="articles__text">
+								Системы отображения информации - это устройства предназначенные для отображения визуальной информации перед собравшейся аудиторией. В данной статье мы постараемся описать основные типы систем отображения информации
+							</div>
+							<div class="articles__button">
+								Подробнее
+							</div>
+						</a>
+						<a href="#" class="articles__card">
+							<div class="articles__name">
+								Светодиодные экраны
+							</div>
+							<div class="articles__text">
+								Светодиодный экран (LED экран) – это устройство отображения информации, в котором изображение формируется множеством полупроводниковых 
+							</div>
+							<div class="articles__button">
+								Подробнее
+							</div>
+						</a>
+						<a href="#" class="articles__card">
+							<div class="articles__name">
+								Проекционные экраны
+							</div>
+							<div class="articles__text">
+								Проекционный экран является неотъемлемым и заключительным элементом в цепочке любой проекционной системы, основное предназначение которого
+							</div>
+							<div class="articles__button">
+								Подробнее
+							</div>
+						</a>
+					</div>
+					<div class="articles__more">
+						Все статьи
+					</div>
+				</div>
+			</div>
+			<section class="our-solutions equipment-solutions block gray">
+				<div class="our-solutions__container">
+					<h3 class="our-solutions__title title">
+						Наши комплексные решения
+					</h3>
+					<div class="our-solutions__cards">
+						<a href="#" class="our-solutions__card large">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/1.jpg" alt="">
+							</div>
+							<p>Актовые залы</p>
+						</a>
+						<a href="#" class="our-solutions__card">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/2.jpg" alt="">
+							</div>
+							<p>Конференц-залы</p>
+						</a>
+						<a href="#" class="our-solutions__card">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/3.jpg" alt="">
+							</div>
+							<p>Переговорные комнаты</p>
+						</a>
+						<a href="#" class="our-solutions__card">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/4.jpg" alt="">
+							</div>
+							<p>Лекционные залы</p>
+						</a>
+						<a href="#" class="our-solutions__card">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/5.jpg" alt="">
+							</div>
+							<p>Ситуационные центры</p>
+						</a>
+						<a href="#" class="our-solutions__card bigmobile">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/6.jpg" alt="">
+							</div>
+							<p>Мультимедийное</p>
+						</a>
+						<a href="#" class="our-solutions__card">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/7.jpg" alt="">
+							</div>
+							<p>Диспетчерские центры</p>
+						</a>
+						<a href="#" class="our-solutions__card">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/8.jpg" alt="">
+							</div>
+							<p>Залы совещаний</p>
+						</a>
+						<a href="#" class="our-solutions__card big">
+							<div class="our-solutions__img">
+								<img src="img/our-solutions/9.jpg" alt="">
+							</div>
+							<p>Учебные аудитории</p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<div id="config" class="config block">
+				<div class="config__container">
+					<div class="config__title title">
+						Конфигуратор актового зала
+					</div>
+					<div class="config__wrapper">
+						<div class="config__top">
+							<div class="config__top-title">
+								Изображение
+							</div>
+							<div class="config__top-cards">
+								<div class="config__top-card">
+									<input data-configprice="50000" type="radio" name="config" id="config1">
+									<label for="config1">
+										<div class="config__top-image">
+											<img src="img/config/1.svg" alt="">
+										</div>
+										<div class="config__top-text">
+											<span>
+												<img src="img/config/checkbox.svg" alt="">
+											</span>
+											<b>
+												Светодиодный экран
+											</b>
+										</div>
+									</label>
+								</div>
+								<div class="config__top-card">
+									<input data-configprice="100000" type="radio" name="config" id="config2">
+									<label for="config2">
+										<div class="config__top-image">
+											<img src="img/config/2.svg" alt="">
+										</div>
+										<div class="config__top-text">
+											<span>
+												<img src="img/config/checkbox.svg" alt="">
+											</span>
+											<b>
+												Видеостена
+											</b>
+										</div>
+									</label>
+								</div>
+								<div class="config__top-card">
+									<input data-configprice="150000" type="radio" name="config" id="config3">
+									<label for="config3">
+										<div class="config__top-image">
+											<img src="img/config/3.svg" alt="">
+										</div>
+										<div class="config__top-text">
+											<span>
+												<img src="img/config/checkbox.svg" alt="">
+											</span>
+											<b>
+												Проектор и экран
+											</b>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="config__body">
+							<div class="config__column">
+								<div class="config__item">
+									<div class="config__item-left">
+										<img src="img/config/icon1.svg" alt="">
+										<span>
+											Звуковое оснащение
+										</span>
+									</div>
+									<div class="config__item-right">
+										<div class="config__item-descr">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											  <circle cx="10" cy="10" r="9.5" fill="white" stroke="#BBBBBB" />
+											  <path d="M9.38104 15.5V7.68182H10.8896V15.5H9.38104ZM10.1481 6.04545C9.85405 6.04545 9.6005 5.94531 9.38743 5.74503C9.17862 5.54474 9.07422 5.30398 9.07422 5.02273C9.07422 4.74148 9.17862 4.50071 9.38743 4.30043C9.6005 4.10014 9.85405 4 10.1481 4C10.4421 4 10.6935 4.10014 10.9023 4.30043C11.1154 4.50071 11.2219 4.74148 11.2219 5.02273C11.2219 5.30398 11.1154 5.54474 10.9023 5.74503C10.6935 5.94531 10.4421 6.04545 10.1481 6.04545Z" fill="#BBBBBB" />
+											</svg>				
+											<p>
+												Подвесные звуковые массивы - 500 Вт, Сабвуферы - 700 Вт, Сценические мониторы - 350 Вт, Усилители мощности, Цифровой процессор, Цифровой микшерный пульт
+											</p>							
+										</div>
+										<div class="config__item-checkbox">
+											<input data-configprice="10000" type="checkbox" id="configcheck1">
+											<label for="configcheck1">
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="config__item">
+									<div class="config__item-left">
+										<img src="img/config/icon1.svg" alt="">
+										<span>
+											Видеоконференцсвязь
+										</span>
+									</div>
+									<div class="config__item-right">
+										<div class="config__item-checkbox">
+											<input data-configprice="15000" type="checkbox" id="configcheck2">
+											<label for="configcheck2">
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="config__item">
+									<div class="config__item-left">
+										<img src="img/config/icon1.svg" alt="">
+										<span>
+											Интерактивная трибуна
+										</span>
+									</div>
+									<div class="config__item-right">
+										<div class="config__item-quantity quantity">
+											<button class="decrement">
+												<img src="img/config/minus.svg" alt="">
+											</button>
+											<input data-configprice="5000" class="quantityInput" type="number" value="0">
+											<button class="increment">
+												<img src="img/config/plus.svg" alt="">
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="config__column">
+								<div class="config__item">
+									<div class="config__item-left">
+										<img src="img/config/icon1.svg" alt="">
+										<span>
+											Микрофоны
+										</span>
+									</div>
+									<div class="config__item-right">
+										<div class="config__item-checkbox">
+											<input data-configprice="5000" type="checkbox" id="configcheck4">
+											<label for="configcheck4">
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="config__item">
+									<div class="config__item-left">
+										<img src="img/config/icon1.svg" alt="">
+										<span>
+											Централизованное управление
+										</span>
+									</div>
+									<div class="config__item-right">
+										<div class="config__item-checkbox">
+											<input data-configprice="15000" type="checkbox" id="configcheck5">
+											<label for="configcheck5">
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="config__item">
+									<div class="config__item-left">
+										<img src="img/config/icon1.svg" alt="">
+										<span>
+											Сценическое освещение
+										</span>
+									</div>
+									<div class="config__item-right">
+										<div class="config__item-descr">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											  <circle cx="10" cy="10" r="9.5" fill="white" stroke="#BBBBBB" />
+											  <path d="M9.38104 15.5V7.68182H10.8896V15.5H9.38104ZM10.1481 6.04545C9.85405 6.04545 9.6005 5.94531 9.38743 5.74503C9.17862 5.54474 9.07422 5.30398 9.07422 5.02273C9.07422 4.74148 9.17862 4.50071 9.38743 4.30043C9.6005 4.10014 9.85405 4 10.1481 4C10.4421 4 10.6935 4.10014 10.9023 4.30043C11.1154 4.50071 11.2219 4.74148 11.2219 5.02273C11.2219 5.30398 11.1154 5.54474 10.9023 5.74503C10.6935 5.94531 10.4421 6.04545 10.1481 6.04545Z" fill="#BBBBBB" />
+											</svg>				
+											<p>
+												Подвесные звуковые массивы - 500 Вт, Сабвуферы - 700 Вт, Сценические мониторы - 350 Вт, Усилители мощности, Цифровой процессор, Цифровой микшерный пульт
+											</p>							
+										</div>
+										<div class="config__item-checkbox">
+											<input data-configprice="25000" type="checkbox" id="configcheck6">
+											<label for="configcheck6">
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="config__column">
+								<div class="config__item">
+									<div class="config__item-left">
+										<img src="img/config/icon1.svg" alt="">
+										<span>
+											Настольный лючок
+										</span>
+									</div>
+									<div class="config__item-right">
+										<div class="config__item-quantity quantity">
+											<button class="decrement">
+												<img src="img/config/minus.svg" alt="">
+											</button>
+											<input data-configprice="8000" class="quantityInput" type="number" value="0">
+											<button class="increment">
+												<img src="img/config/plus.svg" alt="">
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="config__item">
+									<div class="config__item-left">
+										<img src="img/config/icon1.svg" alt="">
+										<span>
+											Антрактно-раздвижной занавес
+										</span>
+									</div>
+									<div class="config__item-right">
+										<div class="config__item-descr">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											  <circle cx="10" cy="10" r="9.5" fill="white" stroke="#BBBBBB" />
+											  <path d="M9.38104 15.5V7.68182H10.8896V15.5H9.38104ZM10.1481 6.04545C9.85405 6.04545 9.6005 5.94531 9.38743 5.74503C9.17862 5.54474 9.07422 5.30398 9.07422 5.02273C9.07422 4.74148 9.17862 4.50071 9.38743 4.30043C9.6005 4.10014 9.85405 4 10.1481 4C10.4421 4 10.6935 4.10014 10.9023 4.30043C11.1154 4.50071 11.2219 4.74148 11.2219 5.02273C11.2219 5.30398 11.1154 5.54474 10.9023 5.74503C10.6935 5.94531 10.4421 6.04545 10.1481 6.04545Z" fill="#BBBBBB" />
+											</svg>				
+											<p>
+												Подвесные звуковые массивы - 500 Вт, Сабвуферы - 700 Вт, Сценические мониторы - 350 Вт, Усилители мощности, Цифровой процессор, Цифровой микшерный пульт
+											</p>							
+										</div>
+										<div class="config__item-checkbox">
+											<input data-configprice="25000" type="checkbox" id="configcheck7">
+											<label for="configcheck7">
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="config__bottom">
+						<p>
+							Ориентировочная стоимость:
+							<span>
+								73 000 р.
+							</span>
+						</p>
+						<button data-topopup="#popup">
+							Заказать проект
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<nav class="footer__menu">
+						<a href="aboutus.html">О нас</a>
+						<a href="solutions.html">
+							Решения
+						</a>
+						<a href="brands.html">
+							Бренды
+						</a>
+						<a href="portfolio.html">Портфолио</a>
+						<a href="reviews.html">Отзывы</a>
+						<a href="certificates.html">Сертификаты</a>
+						<a href="contacts.html">Контакты</a>
+					</nav>
+					<div class="footer__socials">
+						<a target="_blank" href="#">
+							<img src="img/footer/vk.svg" alt="">
+						</a>
+						<a target="_blank" href="#">
+							<img src="img/footer/yt.svg" alt="">
+						</a>						
+					</div>
+				</div>
+				<div class="footer__middle">
+					<div class="footer__content">
+						<p>
+							<b>
+								Москва, 1-й Дорожный проезд, 6С3, БЦ Гелиум
+							</b>
+							<a href="#">
+								Карта проезда
+							</a>
+						</p>
+						<span>
+							время работы с 10:00 до 19:00
+						</span>
+						<div class="footer__socials">
+							<a target="_blank" href="#">
+								<img src="img/footer/vk.svg" alt="">
+							</a>
+							<a target="_blank" href="#">
+								<img src="img/footer/yt.svg" alt="">
+							</a>						
+						</div>
+					</div>
+					<div class="footer__right">
+						<p>
+							<a class="footer__call" href="tel:+74997033211">
+								+7 (499) 703-32-11
+							</a>
+							<a data-topopup="#popup" href="#popup" class="footer__button">
+								Обратный звонок
+							</a>							
+						</p>
+						<p>
+							<a class="footer__mail" href="mailto:info@i-tec.ru">
+								info@i-tec.ru
+							</a>
+							<a data-topopup="#popup" href="#popup" class="footer__button">
+								Напишите нам
+							</a>							
+						</p>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<span>
+						2007-2023 Айтек © 
+					</span>
+					<a href="#">
+						Карта сайта
+					</a>
+					<a href="#">
+						Политика конфиденциальности
+					</a>
+					<span>
+						Создание сайта <br><em>—</em> FUNKY MONKEY
+					</span>
+				</div>
+			</div>
+		</footer>
+		<div id="calcpopup" class="popup">
+			<div class="popup__content">
+				<div class="popup__close">
+					<img src="img/equipment/close.svg" alt="">
+				</div>
+				<div class="popup__title">
+					Конфигуратор переговорной комнаты
+				</div>
+				<div class="popup__subtitle">
+					Данный конфигуратор не является прямой офертой, определяемой положениями статьи 437 ГК РФ, а лишь помогает иметь приблизительное понимание ценовых предложений.
+				</div>
+				<div class="popup__wrapper">
+					<div class="popup__row active">
+						<div class="popup__top">
+							<div class="popup__left">
+								<b>1</b>
+								<p>
+									Система отображения информации <small>(от 100.000 р)</small>
+								</p>
+							</div>
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="12.3077" cy="12.5" rx="12.3077" ry="12" fill="white"/>
+							<path d="M7.77351 11.0188C8.07335 10.7264 8.55948 10.7264 8.85932 11.0188L13.3937 15.4398L12.3079 16.4985L7.77351 12.0775C7.47367 11.7851 7.47367 11.3111 7.77351 11.0188Z" fill="black"/>
+							<path d="M11.2231 15.4419L15.7555 11.0229C16.055 10.7308 16.5407 10.7308 16.8402 11.0229C17.1397 11.3149 17.1397 11.7884 16.8402 12.0805L12.3079 16.4995L11.2231 15.4419Z" fill="black"/>
+							</svg>
+						</div>
+						<div class="popup__body">
+							<div class="popup__radios">
+								<div class="popup__radio">
+									<input checked type="radio" name="radio1" id="radio1">
+									<label for="radio1">
+										<span></span>
+										Проектор (5000 Лм, WUXGA (1920x1200))
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio1" id="radio2">
+									<label for="radio2">
+										<span></span>
+										Интерактивная панель 65 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio1" id="radio3">
+									<label for="radio3">
+										<span></span>
+										Интерактивная панель 75 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio1" id="radio4">
+									<label for="radio4">
+										<span></span>
+										Интерактивная панель 85 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio1" id="radio5">
+									<label for="radio5">
+										<span></span>
+										Интерактивная панель 98 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio1" id="radio6">
+									<label for="radio6">
+										<span></span>
+										Видеостена 2x2 (55", 4K (3840x2160), шов 1,8 мм)
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__row">
+						<div class="popup__top">
+							<div class="popup__left">
+								<b>2</b>
+								<p>
+									Звуковое оснащение
+								</p>
+							</div>
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="12.3077" cy="12.5" rx="12.3077" ry="12" fill="white"/>
+							<path d="M7.77351 11.0188C8.07335 10.7264 8.55948 10.7264 8.85932 11.0188L13.3937 15.4398L12.3079 16.4985L7.77351 12.0775C7.47367 11.7851 7.47367 11.3111 7.77351 11.0188Z" fill="black"/>
+							<path d="M11.2231 15.4419L15.7555 11.0229C16.055 10.7308 16.5407 10.7308 16.8402 11.0229C17.1397 11.3149 17.1397 11.7884 16.8402 12.0805L12.3079 16.4995L11.2231 15.4419Z" fill="black"/>
+							</svg>
+						</div>
+						<div class="popup__body">
+							<div class="popup__checkboxes">
+								<div class="popup__checkbox">
+									<input checked type="checkbox" name="checkbox" id="checkbox1">
+									<label for="checkbox1">
+										<span></span>
+										Проектор (5000 Лм, WUXGA (1920x1200))
+									</label>
+								</div>
+								<div class="popup__checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox2">
+									<label for="checkbox2">
+										<span></span>
+										Интерактивная панель 65 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__row">
+						<div class="popup__top">
+							<div class="popup__left">
+								<b>3</b>
+								<p>
+									Система микрофонов
+								</p>
+							</div>
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="12.3077" cy="12.5" rx="12.3077" ry="12" fill="white"/>
+							<path d="M7.77351 11.0188C8.07335 10.7264 8.55948 10.7264 8.85932 11.0188L13.3937 15.4398L12.3079 16.4985L7.77351 12.0775C7.47367 11.7851 7.47367 11.3111 7.77351 11.0188Z" fill="black"/>
+							<path d="M11.2231 15.4419L15.7555 11.0229C16.055 10.7308 16.5407 10.7308 16.8402 11.0229C17.1397 11.3149 17.1397 11.7884 16.8402 12.0805L12.3079 16.4995L11.2231 15.4419Z" fill="black"/>
+							</svg>
+						</div>
+						<div class="popup__body">
+							<div class="popup__radios">
+								<div class="popup__radio">
+									<input checked type="radio" name="radio3" id="radio3-1">
+									<label for="radio3-1">
+										<span></span>
+										Проектор (5000 Лм)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio3" id="radio3-2">
+									<label for="radio3-2">
+										<span></span>
+										Интерактивная панель
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__row">
+						<div class="popup__top">
+							<div class="popup__left">
+								<b>4</b>
+								<p>
+									Видеоконференцсвязь
+								</p>
+							</div>
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="12.3077" cy="12.5" rx="12.3077" ry="12" fill="white"/>
+							<path d="M7.77351 11.0188C8.07335 10.7264 8.55948 10.7264 8.85932 11.0188L13.3937 15.4398L12.3079 16.4985L7.77351 12.0775C7.47367 11.7851 7.47367 11.3111 7.77351 11.0188Z" fill="black"/>
+							<path d="M11.2231 15.4419L15.7555 11.0229C16.055 10.7308 16.5407 10.7308 16.8402 11.0229C17.1397 11.3149 17.1397 11.7884 16.8402 12.0805L12.3079 16.4995L11.2231 15.4419Z" fill="black"/>
+							</svg>
+						</div>
+						<div class="popup__body">
+							<div class="popup__radios">
+								<div class="popup__radio">
+									<input checked type="radio" name="radio4" id="radio4-1">
+									<label for="radio4-1">
+										<span></span>
+										Проектор 
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio4" id="radio4-2">
+									<label for="radio4-2">
+										<span></span>
+										Интерактивная панель 65 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__row">
+						<div class="popup__top">
+							<div class="popup__left">
+								<b>5</b>
+								<p>
+									Бронирование переговорных комнат
+								</p>
+							</div>
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="12.3077" cy="12.5" rx="12.3077" ry="12" fill="white"/>
+							<path d="M7.77351 11.0188C8.07335 10.7264 8.55948 10.7264 8.85932 11.0188L13.3937 15.4398L12.3079 16.4985L7.77351 12.0775C7.47367 11.7851 7.47367 11.3111 7.77351 11.0188Z" fill="black"/>
+							<path d="M11.2231 15.4419L15.7555 11.0229C16.055 10.7308 16.5407 10.7308 16.8402 11.0229C17.1397 11.3149 17.1397 11.7884 16.8402 12.0805L12.3079 16.4995L11.2231 15.4419Z" fill="black"/>
+							</svg>
+						</div>
+						<div class="popup__body">
+							<div class="popup__radios">
+								<div class="popup__radio">
+									<input checked type="radio" name="radio5" id="radio5-1">
+									<label for="radio5-1">
+										<span></span>
+										Интерактивная панель 75 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio5" id="radio5-2">
+									<label for="radio5-2">
+										<span></span>
+										Интерактивная панель 85 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio5" id="radio5-3">
+									<label for="radio5-3">
+										<span></span>
+										Интерактивная панель 98 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio5" id="radio5-4">
+									<label for="radio5-4">
+										<span></span>
+										Видеостена 2x2 (55", 4K (3840x2160), шов 1,8 мм)
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__row">
+						<div class="popup__top">
+							<div class="popup__left">
+								<b>6</b>
+								<p>
+									Система управления (умный дом)
+								</p>
+							</div>
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="12.3077" cy="12.5" rx="12.3077" ry="12" fill="white"/>
+							<path d="M7.77351 11.0188C8.07335 10.7264 8.55948 10.7264 8.85932 11.0188L13.3937 15.4398L12.3079 16.4985L7.77351 12.0775C7.47367 11.7851 7.47367 11.3111 7.77351 11.0188Z" fill="black"/>
+							<path d="M11.2231 15.4419L15.7555 11.0229C16.055 10.7308 16.5407 10.7308 16.8402 11.0229C17.1397 11.3149 17.1397 11.7884 16.8402 12.0805L12.3079 16.4995L11.2231 15.4419Z" fill="black"/>
+							</svg>
+						</div>
+						<div class="popup__body">
+							<div class="popup__radios">
+								<div class="popup__radio">
+									<input checked type="radio" name="radio6" id="radio6-1">
+									<label for="radio6-1">
+										<span></span>
+										Интерактивная панель 75 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio6" id="radio6-2">
+									<label for="radio6-2">
+										<span></span>
+										Интерактивная панель 85 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio6" id="radio6-3">
+									<label for="radio6-3">
+										<span></span>
+										Интерактивная панель 98 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__row">
+						<div class="popup__top">
+							<div class="popup__left">
+								<b>7</b>
+								<p>
+									Дополнительные опции
+								</p>
+							</div>
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="12.3077" cy="12.5" rx="12.3077" ry="12" fill="white"/>
+							<path d="M7.77351 11.0188C8.07335 10.7264 8.55948 10.7264 8.85932 11.0188L13.3937 15.4398L12.3079 16.4985L7.77351 12.0775C7.47367 11.7851 7.47367 11.3111 7.77351 11.0188Z" fill="black"/>
+							<path d="M11.2231 15.4419L15.7555 11.0229C16.055 10.7308 16.5407 10.7308 16.8402 11.0229C17.1397 11.3149 17.1397 11.7884 16.8402 12.0805L12.3079 16.4995L11.2231 15.4419Z" fill="black"/>
+							</svg>
+						</div>
+						<div class="popup__body">
+							<div class="popup__radios">
+								<div class="popup__radio">
+									<input checked type="radio" name="radio7" id="radio7-1">
+									<label for="radio7-1">
+										<span></span>
+										Интерактивная панель 75 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio7" id="radio7-2">
+									<label for="radio7-2">
+										<span></span>
+										Видеостена 2x2 (55", 4K (3840x2160), шов 1,8 мм)
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__row">
+						<div class="popup__top">
+							<div class="popup__left">
+								<b>8</b>
+								<p>
+									Услуги инсталляции
+								</p>
+							</div>
+							<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="12.3077" cy="12.5" rx="12.3077" ry="12" fill="white"/>
+							<path d="M7.77351 11.0188C8.07335 10.7264 8.55948 10.7264 8.85932 11.0188L13.3937 15.4398L12.3079 16.4985L7.77351 12.0775C7.47367 11.7851 7.47367 11.3111 7.77351 11.0188Z" fill="black"/>
+							<path d="M11.2231 15.4419L15.7555 11.0229C16.055 10.7308 16.5407 10.7308 16.8402 11.0229C17.1397 11.3149 17.1397 11.7884 16.8402 12.0805L12.3079 16.4995L11.2231 15.4419Z" fill="black"/>
+							</svg>
+						</div>
+						<div class="popup__body">
+							<div class="popup__radios">
+								<div class="popup__radio">
+									<input checked type="radio" name="radio8" id="radio8-1">
+									<label for="radio8-1">
+										<span></span>
+										Интерактивная панель 75 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio8" id="radio8-2">
+									<label for="radio8-2">
+										<span></span>
+										Интерактивная панель 85 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+								<div class="popup__radio">
+									<input type="radio" name="radio8" id="radio8-3">
+									<label for="radio8-3">
+										<span></span>
+										Интерактивная панель 98 (4K (3840x2160), 450 кд/м2, 4000:1)
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="popup__bottom">
+					<p>
+						Ориентировочная стоимость:
+						<span>
+							1 425 000 р.
+						</span>
+					</p>
+					<button>
+						Заказать проект
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="video-popup" class="popup video-popup">
+			<p class="popup__close"></p>
+			<div class="video-popup__container">
+				<div class="popup__close">
+					<img src="img/equipment/close.svg" alt="">
+				</div>
+
+				<video src="img/about-us/video.mp4" controls>
+				</video>				
+			</div>
+		</div>
+		<div class="formPopup popup" id="popup">
+			<span class="popup__close"></span>
+			<form class="formPopup__content">
+				<img class="popup__close" src="img/equipment/close.svg" alt="">
+				<div class="formPopup__title">
+					Оформить заявку
+				</div>
+				<div class="formPopup__subtitle">
+					Оставьте ваш номер телефона и мы перезвоним!
+				</div>
+				<div class="formPopup__inputs">
+					<div class="formPopup__input">
+						<span>Ваше имя</span>
+						<input type="text">
+					</div>
+					<div class="formPopup__input">
+						<span>Телефон*</span>
+						<input class="telmask" type="tel" pattern="\+7\(\d{3}\) \d{3}-\d{2}-\d{2}" oninvalid="this.setCustomValidity('Поле не правильно заполнен')" oninput="this.setCustomValidity('')" required>					
+					</div>
+				</div>
+				<button>ОТПРАВИТЬ</button>
+				<div class="formPopup__bottom">
+					Нажимая кнопку “Отправить” вы подтверждаете свое согласие на обработку персональных данных
+				</div>
+				
+			</form>
+		</div>
+		<div class="calcForm popup">
+			<form class="calcForm__content popup__content">
+				<div class="calcForm__back">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="none">
+						<path d="M29 8.76053L2 8.76053L2 7.26053L29 7.26053L29 8.76053Z" fill="black"/>
+						<path d="M8.07107 15.0703L0.999999 7.99925L2.06066 6.93859L9.13173 14.0097L8.07107 15.0703Z" fill="black"/>
+						<path d="M2.06079 9.05979L9.13186 1.98873L8.0712 0.928065L0.999999 7.99925L2.06079 9.05979Z" fill="black"/>
+					</svg>
+				</div>		
+				<div class="calcForm__close popup__close">
+					<img src="img/equipment/close.svg" alt="">
+				</div>
+				<div class="calcForm__title">
+					Заказать проект
+				</div>
+				<div class="calcForm__subtitle">
+					Оставьте номер телефона и мы перезвоним вам с уточнениями по проекту
+				</div>
+				<div class="calcForm__grid">
+					<div class="formPopup__inputs">
+						<div class="formPopup__input">
+							<span>Ваше имя</span>
+							<input type="text">
+						</div>
+						<div class="formPopup__input">
+							<span>Телефон*</span>
+							<input class="telmask" type="tel" pattern="\+7\(\d{3}\) \d{3}-\d{2}-\d{2}" oninvalid="this.setCustomValidity('Поле не правильно заполнен')" oninput="this.setCustomValidity('')" required>					
+						</div>
+					</div>
+					<button>ОТПРАВИТЬ</button>
+					<div class="formPopup__bottom">
+						Нажимая кнопку “Отправить” вы подтверждаете свое согласие на обработку персональных данных
+					</div>					
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="https://unpkg.com/imask@7.1.3/dist/imask.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

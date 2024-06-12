@@ -1,0 +1,2481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Айтек</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+				<svg viewBox="0 0 149 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="toBlack" d="M10.27 13.5478H14.1275L24.3311 37.8924H20.2746L17.6365 31.4678H6.73609L4.09808 37.8924H0.0664062L10.27 13.5478ZM8.15464 27.9724H16.2429L12.2112 17.8801L8.15464 27.9724ZM52.6026 37.8924V20.3417L38.8899 37.8924H35.5551V13.5478H39.4126V31.1232L53.1252 13.5478H56.4601V37.8924H52.6026ZM86.3492 13.5478V17.0186H78.9578V37.8924H75.1003V17.0186H67.7089V13.5478H86.3492ZM115.342 34.397V37.8678H97.5981V13.5232H114.994V16.994H101.456V23.4186H112.182V26.8893H101.456V34.3478H115.342V34.397ZM131.519 25.3632L142.594 13.5232H147.521L138.039 23.6155L148.243 37.8678H143.489L135.401 26.397L131.544 30.5817V37.8924H127.686V13.5478H131.544V25.3632H131.519Z" fill="white"/>
+					<path d="M49.2922 8.69843C49.3059 9.15382 49.2053 9.60546 48.9994 10.013C48.7934 10.4205 48.4886 10.7712 48.1122 11.0337C47.7357 11.2962 47.2993 11.4624 46.8421 11.5173C46.3848 11.5722 45.9209 11.5142 45.4919 11.3484C45.0629 11.1827 44.6821 10.9143 44.3835 10.5674C44.085 10.2205 43.878 9.80575 43.7811 9.36036C43.6842 8.91496 43.7004 8.45276 43.8283 8.01508C43.9562 7.57741 44.1917 7.1779 44.5139 6.85228C45.0863 6.28612 45.8578 6.01535 46.6044 6.03997H46.6293C47.0145 6.05013 47.3977 5.98259 47.7556 5.84145C48.1135 5.70032 48.4386 5.48855 48.7111 5.21906C48.9835 4.94958 49.1976 4.62802 49.3403 4.27401C49.483 3.92 49.5513 3.54094 49.541 3.15997V3.13535C49.5273 2.67997 49.6279 2.22832 49.8339 1.8208C50.0398 1.41328 50.3446 1.06258 50.7211 0.800068C51.0975 0.537556 51.5339 0.371412 51.9911 0.316492C52.4484 0.261572 52.9123 0.319589 53.3413 0.485354C53.7704 0.651119 54.1512 0.919466 54.4497 1.2664C54.7483 1.61333 54.9552 2.02804 55.0521 2.47343C55.149 2.91882 55.1328 3.38102 55.0049 3.8187C54.877 4.25638 54.6415 4.65589 54.3193 4.98151C54.0451 5.25051 53.7183 5.46131 53.3588 5.60099C52.9993 5.74067 52.6148 5.80628 52.2288 5.79382H52.2039C51.8166 5.78349 51.4312 5.85175 51.0716 5.99439C50.712 6.13702 50.3857 6.35101 50.1128 6.62316C49.84 6.89531 49.6265 7.21985 49.4853 7.57677C49.3442 7.93369 49.2784 8.31542 49.2922 8.69843C49.2922 8.67382 49.2922 8.67382 49.2922 8.69843Z" fill="url(#paint0_linear_410_393)"/>
+					<path d="M43.6934 8.69819C43.6797 9.15357 43.7803 9.60522 43.9862 10.0127C44.1921 10.4203 44.4969 10.771 44.8734 11.0335C45.2499 11.296 45.6862 11.4621 46.1435 11.517C46.6007 11.572 47.0646 11.514 47.4937 11.3482C47.9227 11.1824 48.3035 10.9141 48.6021 10.5671C48.9006 10.2202 49.1076 9.8055 49.2045 9.36011C49.3013 8.91472 49.2851 8.45252 49.1572 8.01484C49.0294 7.57716 48.7938 7.17765 48.4717 6.85203C48.1975 6.58303 47.8706 6.37223 47.5112 6.23255C47.1517 6.09288 46.7672 6.02726 46.3812 6.03973H46.3563C45.9711 6.04989 45.5879 5.98235 45.23 5.84121C44.872 5.70007 44.5469 5.48831 44.2745 5.21882C44.002 4.94933 43.7879 4.62778 43.6452 4.27377C43.5025 3.91975 43.4342 3.5407 43.4445 3.15973V3.13511C43.4582 2.67973 43.3576 2.22808 43.1517 1.82056C42.9458 1.41303 42.641 1.06234 42.2645 0.799823C41.888 0.537311 41.4517 0.371167 40.9944 0.316248C40.5372 0.261328 40.0733 0.319345 39.6443 0.48511C39.2152 0.650875 38.8344 0.919222 38.5358 1.26615C38.2373 1.61309 38.0303 2.02779 37.9334 2.47319C37.8366 2.91858 37.8528 3.38078 37.9807 3.81846C38.1085 4.25613 38.3441 4.65564 38.6662 4.98126C39.2386 5.54742 40.0101 5.81819 40.7567 5.79357H40.7816C41.169 5.78325 41.5543 5.8515 41.914 5.99414C42.2736 6.13678 42.5999 6.35077 42.8727 6.62292C43.1455 6.89507 43.3591 7.21961 43.5003 7.57653C43.6414 7.93345 43.7071 8.31518 43.6934 8.69819C43.7183 8.67357 43.7183 8.67357 43.6934 8.69819Z" fill="url(#paint1_linear_410_393)"/>
+					<defs>
+						<linearGradient id="paint0_linear_410_393" x1="43.7175" y1="5.91689" x2="55.1157" y2="5.91689" gradientUnits="userSpaceOnUse">
+							<stop offset="0.1" stop-color="#006E3B"/>
+							<stop offset="0.7" stop-color="#0C5B82"/>
+							<stop offset="1" stop-color="#11539F"/>
+						</linearGradient>
+						<linearGradient id="paint1_linear_410_393" x1="49.4423" y1="9.28896" x2="37.7856" y2="2.458" gradientUnits="userSpaceOnUse">
+							<stop offset="0.1" stop-color="#E31921"/>
+							<stop offset="0.2" stop-color="#E42721"/>
+							<stop offset="0.4" stop-color="#E63D22"/>
+							<stop offset="0.5" stop-color="#A8752F"/>
+							<stop offset="0.7" stop-color="#64B23E"/>
+							<stop offset="1" stop-color="#65B231"/>
+						</linearGradient>
+					</defs>
+				</svg>
+				</a>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item has-sublist">
+							<a href="solutions.html" class="menu__link">
+								<span>Решения</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 1L5 4.75L1.25 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<div class="menu__wrapper">
+								<div class="menu__container">
+									<div class="menu__left">
+										<a data-tab="solution1" class="active" href="solutions.html">Помещения</a>
+										<a data-tab="solution2" href="solutions.html">Мероприятия</a>
+										<a data-tab="solution3" href="solutions.html">Отрасли</a>
+										<a data-tab="solution4" href="solutions.html">Оборудование</a>
+										<a data-tab="solution5" href="solutions.html">Монтаж</a>
+										<a data-tab="solution6" href="solutions.html">Библиотека знаний</a>
+									</div>
+									<div data-content="solution1" class="menu__body target">
+										<a href="#">Переговорные комнаты</a>
+										<a href="#">Залы совещаний</a>
+										<a href="#">Конференц-залы</a>
+										<a href="#">Залы заседаний</a>
+										<a href="#">Актовые залы</a>
+										<a href="#">Фойе и холлы компаний</a>
+										<a href="#">Кабинет руководителя</a>
+										<a href="#">Лекционные залы</a>
+										<a href="#">Учебные аудитории</a>
+										<a href="#">Домашние кинотеатры</a>
+										<a href="#">Кафе | Рестораны | Бары</a>
+										<a href="#">Ситуационные центры</a>
+										<a href="#">Диспетчерские центры</a>
+										<a href="#">Современный офис</a>
+									</div>
+									<div data-content="solution2" class="menu__body">
+										<a href="#">Видеоконференция</a>
+										<a href="#">Конференция</a>
+										<a href="#">Выступления</a>
+										<a href="#">Презентация</a>
+									</div>
+									<div data-content="solution3" class="menu__body">
+										<a href="#">Медицинские учреждения</a>
+										<a href="#">Промышленность</a>
+										<a href="#">Образование</a>
+										<a href="#">Государственный сектор</a>
+										<a href="#">Гостиницы</a>
+										<a href="#">Корпоративный сектор</a>
+										<a href="#">Спортивные и фитнес залы</a>
+										<a href="#">Банки</a>
+									</div>
+									<div data-content="solution4" class="menu__body">
+										<a href="#">Аудио</a>
+										<a href="#">Аудиовизуальное</a>
+										<a href="#">Мультимедийное</a>
+										<a href="#">Видеостены</a>
+										<a href="#">Мультимедиа</a>
+										<a href="#">Озвучивание помещений</a>
+										<a href="#">Озвучивание территорий</a>
+									</div>
+									<div data-content="solution5" class="menu__body">
+										<a href="#">Проектор</a>
+										<a href="#">Проекционный экран</a>
+										<a href="#">Проекционное оборудование</a>
+										<a href="#">Интерактивные доски</a>
+										<a href="#">Видеостены</a>
+									</div>
+									<div data-content="solution6" class="menu__body">
+										<a href="#">Средства отображения информации</a>
+										<a href="#">Видеоконференцсвязь</a>
+										<a href="#">Конференц-системы</a>
+										<a href="#">Синхронный перевод</a>
+										<a href="#">Интерактивное голосование</a>
+										<a href="#">Звуковое оборудование</a>
+										<a href="#">BYOD устройства (Bring Your Own Device)</a>
+										<a href="#">Системы бронирования</a>
+										<a href="#">Digital Signage</a>
+										<a href="#">Коммутация</a>
+										<a href="#">Моторизованные шторы</a>
+										<a href="#">Централизованное управление (Умный дом)</a>
+										<a href="#">Специализированная мебель</a>
+										<a href="#">
+											Сценическое освещение
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu__item has-sublist">
+							<a href="brands.html" class="menu__link">
+								<span>Бренды</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 1L5 4.75L1.25 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>	
+							</a>
+							<div class="menu__wrapper">
+								<div class="menu__container">			
+									<div class="menu__left">
+
+										<a href="#" class="menu-main__item">
+											<img src="img/arrow.svg" alt="">
+											Бренды
+										</a>		
+
+										<a data-tab="brand1" class="active" href="brands.html">Проекторы</a>
+										<a data-tab="brand2" href="brands.html">Проекционные экраны</a>
+										<a data-tab="brand3" href="brands.html">Дисплейные решения</a>
+										<a data-tab="brand4" href="brands.html">Видеоконференцсвязь</a>
+										<a data-tab="brand5" href="brands.html">Звуковое оборудование</a>
+										<a data-tab="brand6" href="brands.html">Конгресс-системы</a>
+										<a data-tab="brand7" href="brands.html">Системы автомазиции</a>
+										<a data-tab="brand8" href="brands.html">Системы совместной работы</a>
+										<a data-tab="brand9" href="brands.html">Коммутация и кабели</a>
+									</div>
+
+									<div class="menu__search">
+										<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>	
+										<input type="text" placeholder="Поиск по сайту">							
+									</div>
+
+									<div data-content="brand1" class="menu__wrap target">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Проекторы Epson">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Проекторы Panasonic">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Проекторы Nec">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Проекторы Infocus">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Проекторы Eiki">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Проекторы Barco">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Проекторы Sony">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Проекторы Vivitek">
+										</a>
+									</div>
+									<div data-content="brand2" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Проекционные экраны Draper">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Проекционные экраны Da-Lite">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Проекционные экраны Projecta">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Проекционные экраны Digis">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Проекционные экраны Lumien">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Проекционные экраны Draper">
+										</a>
+									</div>
+									<div data-content="brand3" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Профессиональные панели EliteBoard">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Профессиональные панели Panasonic">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Профессиональные панели LG">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Профессиональные панели Samsung">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Профессиональные панели NEC">
+										</a>
+									</div>
+									<div data-content="brand4" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Видеоконференцсязь Polycom">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Видеоконференцсязь Cisco">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Видеоконференцсязь Yealink">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Видеоконференцсязь Lifesize">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Видеоконференцсязь Trueconf">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Видеоконференцсязь ClearOne">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Видеоконференцсязь Polycom">
+										</a>
+									</div>
+									<div data-content="brand5" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Звуковое оборудование Yamaha">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Звуковое оборудование JBL">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Звуковое оборудование Audac">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Звуковое оборудование Apart">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Звуковое оборудование Bose">
+										</a>
+									</div>
+									<div data-content="brand6" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Конгресс-системы Shure">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Конгресс-системы Televic">
+										</a>
+									</div>
+									<div data-content="brand7" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Системы автомазиции RTI">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Системы автомазиции и управление Crestron">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Системы автомазиции и управление AMX">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Системы автомазиции RTX">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Системы автомазиции GTX">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Системы автомазиции NEC">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Системы автомазиции Sony">
+										</a>
+									</div>
+									<div data-content="brand8" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Система совместной работы Barco">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Система совместной работы Kramer">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Система совместной работы Biamp">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Система совместной работы AMX">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Система совместной работы Vivitek">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Система совместной работы RTA">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Система совместной работы XSL">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Проекторы Epson">
+										</a>
+									</div>
+									<div data-content="brand9" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Коммутационное оборудование Extron">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Коммутационное оборудование ATEN">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Коммутационное оборудование Digis">
+										</a>
+									</div>	
+								</div>															
+							</div>
+						</li>
+						<li class="menu__item">
+							<a href="aboutus.html" class="menu__link"><span>О нас</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="portfolio.html" class="menu__link"><span>Портфолио</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="reviews.html" class="menu__link"><span>Отзывы</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="certificates.html" class="menu__link"><span>Сертификаты</span></a>
+						</li>				
+						<li class="menu__item">
+							<a href="contacts.html" class="menu__link"><span>Контакты</span></a>
+						</li>									
+					</ul>
+					<div class="menu__search">
+						<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>	
+						<input type="text" placeholder="Поиск по сайту">							
+					</div>
+				</nav>
+				<div class="header__actions">
+					<a href="tel:+74997033211" class="header__call">
+						<svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.3433 18.48L19.5833 16.24C19.885 15.9421 20.2667 15.7381 20.6821 15.6529C21.0975 15.5677 21.5287 15.6049 21.9233 15.76L24.6533 16.85C25.0521 17.0119 25.3941 17.2882 25.6361 17.6441C25.8781 18.0001 26.0094 18.4197 26.0133 18.85V23.85C26.011 24.1428 25.9494 24.4321 25.8324 24.7005C25.7153 24.9688 25.5452 25.2107 25.3321 25.4116C25.1191 25.6125 24.8677 25.7682 24.5929 25.8693C24.3181 25.9704 24.0257 26.0149 23.7333 26C4.60332 24.81 0.743317 8.61004 0.0133175 2.41004C-0.0205696 2.10558 0.0103921 1.79739 0.104166 1.50575C0.197939 1.21411 0.352399 0.945633 0.557385 0.717977C0.76237 0.49032 1.01323 0.308646 1.29348 0.184905C1.57372 0.0611637 1.87698 -0.00183916 2.18332 4.0869e-05H7.01332C7.44433 0.00131666 7.8651 0.131508 8.22151 0.37387C8.57793 0.616232 8.85369 0.959681 9.01332 1.36004L10.1033 4.09004C10.2636 4.48311 10.3045 4.91468 10.2209 5.33085C10.1373 5.74702 9.93292 6.12934 9.63332 6.43004L7.39332 8.67004C7.39332 8.67004 8.68332 17.4 17.3433 18.48Z" fill="white"/>
+						</svg>			
+						<span>
+							+7 (499) 703-32-11
+						</span>			
+					</a>
+					<div class="header__search">
+						<div class="header__search-body">
+							<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>								
+						</div>
+						<div class="header__search-wrapper">
+							<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="#3C3434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>	
+							<input type="text" placeholder="Поиск по сайту">	
+							<img class="search__close" src="img/equipment/close.svg" alt="">
+						</div>				
+					</div>
+					<div class="header__burger"><span></span></div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="main-aboutus">
+				<img src="img/about-us/1.jpg" alt="">
+				<div class="main-aboutus__container">
+					<div class="breadcrumbs-white">
+						<a href="index.html">
+							Главная
+							<img src="img/about-us/arrow.svg" alt="">
+						</a>
+						<span>
+							О нас
+						</span>
+					</div>
+					<div class="main-aboutus__content">
+						<h1>
+							Группа компаний Айтек
+						</h1>					
+						<p>
+							ГК Айтек — группа компаний, специализирующихся на интеграции, разработке аппаратных и программных решений в области аудио и видео технологий.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="aboutus-info gray block">
+				<div class="aboutus-info__container">
+					<div class="aboutus-info__text">
+						Деятельности компании основывается на внедрение и проектировании аудиовизуальных решений для коммерческих организаций, государственных учреждений и органов власти, комплексных решений для объектов сферы образования, а также техническое обеспечение мероприятий разной направленности. Компания работает по всей территории России и странам СНГ.
+					</div>
+					<div class="aboutus-info__logo">
+						<img src="img/about-us/logo.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="aboutus">
+				<div class="aboutus-tabs">
+					<div class="aboutus-tabs__container">
+						<div class="aboutus-tabs__content">
+							<span id="tab-indicator"></span>
+							<a href="#company" class="active">О компании</a>
+							<a href="#direction" >Направления</a>
+							<a href="#services" >Услуги</a>
+							<a href="#reviews" >Отзывы</a>
+							<a href="#certificates" >Сертификаты</a>
+							<a href="#vacancy" >Вакансии</a>
+							<a href="#contacts" >Контакты</a>							
+						</div>
+					</div>
+				</div>
+				<div id="company" class="company target block">
+					<div class="company__container">
+						<h4 class="title">
+							О компании
+						</h4>
+						<div class="company__stats">
+							<div class="company__stats-card">
+								<p>
+									15+
+								</p>
+								<span>
+									Лет <br>
+									на рынке
+								</span>
+							</div>
+							<div class="company__stats-card">
+								<p>
+									100+
+								</p>
+								<span>
+									Благодарственных писем
+								</span>
+							</div>
+							<div class="company__stats-card">
+								<p>
+									500+
+								</p>
+								<span>
+									Выполненных проектов
+								</span>
+							</div>
+							<div class="company__stats-card">
+								<p>
+									5000+
+								</p>
+								<span>
+									Наименований товаров
+								</span>
+							</div>
+							<div class="company__stats-card">
+								<p>
+									0
+								</p>
+								<span>
+									Ни одной рекламации
+								</span>
+							</div>																												
+						</div>
+						<div class="company__content">
+							<div class="company__left">
+								<div class="company__title">
+									15 лет работаем на рынке системной интеграции
+								</div>
+								<div class="company__video" data-topopup="#video-popup">
+									<img src="img/about-us/1.jpg" alt="">
+									<div class="company__controls">
+										<div id="companyPlay" class="company__controls-image">
+											<svg width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M31.5 16.1865C33.5 17.3412 33.5 20.228 31.5 21.3827L4.5 36.9711C2.5 38.1258 1.26184e-07 36.6825 2.27131e-07 34.3731L1.58992e-06 3.19615C1.69086e-06 0.886751 2.5 -0.556624 4.5 0.598077L31.5 16.1865Z" fill="#3F69FF"/>
+											</svg>
+										</div>
+										<p>
+											Презентация компании 
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="company__text">
+								<b>«Уважаемые коллеги, Группа компаний Айтек вот уже 15 лет работает и развивается на рынке аудиовизуальной (АВ) интеграции. </b>
+								<br><br>
+								За это время мы достигли многого: у нас сформировалась профессиональная и дружная команда, которая взаимодействует как единый организм, мы стали реализовывать по-настоящему сложные проекты, которые были удостоены высоких наград. Мы получили уже свыше 100 писем благодарности и реализовали свыше 500 проектов различной сложности. Естественно, большая часть из этих проектов – это простые инсталляции, которые не размещены на нашем сайте в качестве образцово-показательных, НО – для нас это незаменимый опыт, который помог нам добиться успешной реализации более сложных и поистине интересных проектов.
+								<br><br>
+								Да, за 15 лет работы мы совершили немало ошибок, НО – эти ошибки сделали нас сильнее и помогли нам понять: какие решения в действительности можно назвать оптимальными, а какие попросту не работают. Мы не делим проекты на "плохие и хорошие" - нам интересны любые проекты: от самого малого бюджета до крупномасштабных. Ведь каждый новый проект позволяет развиваться и получать новый бесценный опыт.
+								<br><br>
+								Мы смело можем заявить, что дорожим своей чистой и не имеющей отрицательных рекламаций репутацией. К нам обращаются, если предыдущий подрядчик “не смог”. Мы никогда не оставляем наших клиентов в беде, о чем свидетельствует наша чистая судебная репутация. Наши клиенты жалеют, что не нашли нас раньше!»
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="direction" class="direction block gray">
+					<div class="direction__container">
+						<div class="direction__title title">
+							Направления деятельности
+						</div>
+						<div class="direction__card">
+							<div class="direction__top">
+								<b>1</b>
+								Системная интеграция
+							</div>
+							<div class="direction__content">
+								<div class="direction__left">
+									<div class="direction__list">
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Конференц-залы
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Залы для совещаний
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Переговорные комнаты
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Кабинеты для руководителей
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Лекционные залы
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Ситуационные центры
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Диспетчерские центры
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Актовые залы
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Бары | Рестораны | Кафе
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Холлы компаний
+											</p>
+										</a>
+										<a href="#">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12Z" fill="white"/>
+												<path d="M7.5 12L11 15.5L16.5 8" stroke="#3F69FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<p>
+												Персональные кинозалы
+											</p>
+										</a>																											
+									</div>									
+								</div>
+
+								<div class="direction__text">
+									<b>Системная интеграция является основным направлением деятельности нашей организации. Системная интеграция - это разработка комплексных мультимедийных решений для корпоративных и государственных заказчиков с последующим их внедрением. </b>
+									<br><br>
+									В рамках реализации проектов мы предлагаем весь спектр услуг - это консультация и аудит, разработка и проектирование, подготовка ТЗ и участие в государственных торгах, поставка оборудования и мебели, акустический расчёт, строительно-монтажные и пусконаладочные работы. 
+									<br><br>
+									Опираясь на многолетний опыт и профессиональные знания, мы успешно внедряем инновационное оборудование в различные сферы деятельности и бизнеса. Накопленные знания и навыки позволяют предложить проверенные решения, ориентированные на любые запросы и пожелания клиентов.
+								</div>
+							</div>
+						</div>
+						<div class="direction__card">
+							<div class="direction__top">
+								<b>2</b>
+								Продажа оборудования
+							</div>
+							<div class="direction__content">
+								<div class="direction__left">
+									<div class="direction__subtitle">
+										Ассортимент 15 000 позиций от 50 известных производителей
+									</div>
+														
+								</div>
+								<div class="direction__text">
+									<b>Одним из не менее важных направлений нашей деятельности является продажа аудиовизуальных систем для профессионального и домашнего использования. </b>
+									<br><br>
+									Ассортимент реализуемой продукции включает свыше 15000 позиций от 50 известных производителей. На текущий момент мы работаем в партнерстве со всеми крупнейшими производителями оборудования и только через официальные каналы продаж. Благодаря чему, мы всегда сможем поставить оборудование надлежащего качества в срок с соблюдением всех гарантийных обязательств и сможем предложить специальные условия под проекты наших клиентов.
+								</div>
+							</div>
+							<div class="direction__info">
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Проекторы для бизнеса и образования:</b> Epson, Panasonic, Nec, Sony, Infocus, Vivitek, Christie, Barco, Eiki и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Проекционные экраны:</b> Lumien, Projecta, Da-Lite, Digis, Draper и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Дисплейные решения:</b> Panasonic, Lg, Samsung, NEC, Philips, EliteBoard, Lumien, Smart и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Светодиодные решения:</b> Barco, Absen, Unilumin, Dicolor, Liantronics и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Звуковое оборудование:</b> Yamaha, Peavey, JBL, Apart, Bose, Ecler, Audac, BIAMP и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Конференц-системы:</b> Shure, Televic, Bosch, Taiden, Beyerdynamic, Sennheiser и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Видеоконференцсвязь:</b> Polycom, Cisco, Yealink, Lifesize, Clearone, Trueconf и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Системы автоматизации и управления:</b> AMX, Crestron, RTI и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Системы совместной работы:</b> Barco ClickShare, Kramer, Vivitek, AMX и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Коммутация и кабельная продукция:</b> Kramer, Extron, Crestron, Atlona, Muxlab, Digis, Atlona, Aten и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Сетевая инфраструктура:</b> Cisco, Mikrotik, Ubiquiti и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Крепёжные элементы:</b> Wize, Chief, Peerless-AV, Middle Atlantic и др.</span></p>
+								<p><img src="img/about-us/check.svg" alt=""><span><b>Решения Digital Signage:</b> Philips, Spinetix, Vivitek и др.</span></p>																											
+							</div>				
+						</div>
+						<div class="direction__card">
+							<div class="direction__top">
+								<b>3</b>
+								Сервисное обслуживание
+							</div>
+							<div class="direction__content">
+								<div class="direction__left">
+									<div class="direction__subtitle">
+										Обслуживание оборудования —залог его успешной эксплуатации
+									</div>							
+								</div>
+								<div class="direction__text">
+									Сервисное обслуживание оборудования — это залог его успешной эксплуатации. Сервис позволяет при минимальных простоях получать максимальную загрузку оборудования. Своевременное техническое обслуживание не только удлиняет срок службы оборудования, но и позволяет грамотно планировать его простои. 
+									<br><br>
+									Наша компания имет огромный опыт в реализации различных по сложности проектов, именно поэтому мы можем предложить услуги по сервисному обслуживанию Ваших систем.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="services" class="services block">
+					<div class="services__container">
+						<div class="direction__title title">
+							Услуги компании
+						</div>
+
+						<div class="service__swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/about-us/service1.svg" alt="">
+									<p>Аудит и консалтинг</p>
+									<span>Определяем цели и задачи помещения, выявляем потребности Заказчика и подбираем нужное оборудование.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service2.svg" alt="">
+									<p>Участие в тендерах</p>
+									<span>Принимаем участие в торговых процедурах в рамках 44 и 223ФЗ. Готовим грамотное ТЗ в рамках Федеральных законах.</span>
+								</div>
+								<a href="#" class="swiper-slide">
+									<img src="img/about-us/service3.svg" alt="">
+									<p>Проектирование</p>
+									<span>Осуществляем предпроектное обследование и разработку ТЗ, РД и инструкциями по работе с системой для сотрудников.</span>
+								</a>
+								<div class="swiper-slide">
+									<img src="img/about-us/service4.svg" alt="">
+									<p>Акустика помещения</p>
+									<span>Комплекс работ по улучшению акустических характеристик помещения, в ходе которых производятся все необходимые измерения.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service5.svg" alt="">
+									<p>Поставка оборудования</p>
+									<span>Мы работаем через официальные каналы продаж ключевых вендоров, позволяющих нам поставить оборудование в срок и по наилучшим ценам.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service6.svg" alt="">
+									<p>Строительные работы</p>
+									<span>Комплексный подход является наиболее удобным для Заказчика, поскольку за организацию и результат всех этапов работ отвечает одна компания-подрядчик.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service7.svg" alt="">
+									<p>Монтаж оборудования</p>
+									<span>Высокая квалификация наших сотрудников является результатом значительного опыта за счёт постоянного повышения профессиональных навыков.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service8.svg" alt="">
+									<p>Пусконаладочные работы</p>
+									<span>Комплекс работ, выполняемых в период подготовки и проведения индивидуальных испытаний и комплексного опробования оборудования.</span>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/about-us/service9.svg" alt="">
+									<p>Сервисное обслуживание</p>
+									<span>Обслуживание оборудования для обеспечения штатного режима эксплуатации снижает вероятность выхода из строя оборудования.</span>
+								</div>
+							</div>	
+							<div class="service-pagination">
+								
+							</div>							
+						</div>
+					</div>
+				</div>
+				<div class="block gray"  id="reviews">
+					<section class="reviews">
+						<div class="reviews__container">
+							<div class="reviews__top">
+								<h4 class="reviews__title title">
+									Отзывы
+								</h4>		
+								<a href="reviews.html">Все отзывы</a>						
+							</div>
+							<div class="reviews__subtitle">
+								У нас более 100 писем благодарностей
+							</div>
+							<div class="reviews__swiper swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/reviews/logo.png" alt="" class="reviews__logo">
+										<div class="reviews__content">
+											<p>
+												Росатом Академия
+											</p>
+											<span>
+												Коллектив Академии Росатома выражает благодарность компании Айтек за квалифицированно проведённые работы по комплексному оснащению 14-и учебных классов. 
+												Особо следует отметить внимательный подход сотрудников компании Айтек к нуждам и потребностям Заказчика, а также ответственное отношение к решению поставленных задач...												
+											</span>
+											<a href="#">
+												<img src="img/certificates/pdf.png" alt="">
+												Смотреть отзыв
+											</a>
+										</div>
+										<div class="reviews__user">
+											<div class="reviews__image">
+												<img src="img/reviews/user.png" alt="">
+											</div>
+											<div class="reviews__info">
+												<p>
+													Моисеенков Д. А.
+												</p>
+												<span>
+													Руководитель отдела информационных технологий
+												</span>
+											</div>
+										</div>
+										<a href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Смотреть отзыв
+										</a>
+
+									</div>
+									<div class="swiper-slide">
+										<img src="img/reviews/logo.png" alt="" class="reviews__logo">
+										<div class="reviews__content">
+											<p>
+												Росатом Академия
+											</p>
+											<span>
+												Коллектив Академии Росатома выражает благодарность компании Айтек за квалифицированно проведённые работы по комплексному оснащению 14-и учебных классов. 
+												Особо следует отметить внимательный подход сотрудников компании Айтек к нуждам и потребностям Заказчика, а также ответственное отношение к решению поставленных задач...												
+											</span>
+											<a href="#">
+												<img src="img/certificates/pdf.png" alt="">
+												Смотреть отзыв
+											</a>
+										</div>
+										<div class="reviews__user">
+											<div class="reviews__image">
+												<img src="img/reviews/user.png" alt="">
+											</div>
+											<div class="reviews__info">
+												<p>
+													Моисеенков Д. А.
+												</p>
+												<span>
+													Руководитель отдела информационных технологий
+												</span>
+											</div>
+										</div>
+										<a href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Смотреть отзыв
+										</a>
+
+									</div>
+									<div class="swiper-slide">
+										<img src="img/reviews/logo.png" alt="" class="reviews__logo">
+										<div class="reviews__content">
+											<p>
+												Росатом Академия
+											</p>
+											<span>
+												Коллектив Академии Росатома выражает благодарность компании Айтек за квалифицированно проведённые работы по комплексному оснащению 14-и учебных классов. 
+												Особо следует отметить внимательный подход сотрудников компании Айтек к нуждам и потребностям Заказчика, а также ответственное отношение к решению поставленных задач...												
+											</span>
+											<a href="#">
+												<img src="img/certificates/pdf.png" alt="">
+												Смотреть отзыв
+											</a>
+										</div>
+										<div class="reviews__user">
+											<div class="reviews__image">
+												<img src="img/reviews/user.png" alt="">
+											</div>
+											<div class="reviews__info">
+												<p>
+													Моисеенков Д. А.
+												</p>
+												<span>
+													Руководитель отдела информационных технологий
+												</span>
+											</div>
+										</div>
+										<a href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Смотреть отзыв
+										</a>
+
+									</div>									
+								</div>
+								<div class="reviews__prev">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="reviews__next">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>	
+								</div>
+								<div class="reviews-pagination"></div>
+							</div>
+							<a href="#">
+								Все отзывы
+							</a>
+						</div>
+					</section>
+					<section class="reviews reviews-other">
+						<div class="reviews__container">
+							<div class="reviews__top">
+								<h4 class="reviews__title title">
+									Отзывы довольных клиентов
+								</h4>		
+								<a href="reviews.html">Показать все отзывы</a>						
+							</div>
+							<div class="reviews__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="reviews__img">
+											<img src="img/reviews/1.png" alt="">
+										</div>
+										<p>
+											<b>Элтеза</b>
+											Декабрь 2018
+										</p>
+										<a href="#">
+											Посмотреть проект
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<div class="reviews__img">
+											<img src="img/reviews/1.png" alt="">
+										</div>
+										<p>
+											<b>Московский комитет ветеранов</b>
+											Декабрь 2018
+										</p>
+										<a href="#">
+											Посмотреть проект
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<div class="reviews__img">
+											<img src="img/reviews/1.png" alt="">
+										</div>
+										<p>
+											<b>Элтеза</b>
+											Декабрь 2018
+										</p>
+										<a href="#">
+											Посмотреть проект
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<div class="reviews__img">
+											<img src="img/reviews/1.png" alt="">
+										</div>
+										<p>
+											<b>Элтеза</b>
+											Декабрь 2018
+										</p>
+										<a href="#">
+											Посмотреть проект
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<a href="#">
+								Все отзывы
+							</a>							
+						</div>
+					</section>
+				</div>
+
+				<div id="certificates" class="certificates-wrapper block">
+					<section class="certificates">
+						<div class="certificates__container">
+							<h1 class="certificates__title title">
+								Сертификаты
+							</h1>
+							<div class="certificates__subtitle">
+								За 15 лет работы мы получили сертификаты всех ведущих производителей оборудования, и регулярно поддерживаем экспертизу наших сотрудников
+							</div>
+							<div class="certificates__logotypes">
+								<div>
+									<img src="img/our-partners/1.png" alt="">
+									<img src="img/our-partners/2.png" alt="">
+									<img src="img/our-partners/3.png" alt="">
+									<img src="img/our-partners/4.png" alt="">
+									<img src="img/our-partners/5.png" alt="">
+									<img src="img/our-partners/6.png" alt="">
+									<img src="img/our-partners/7.png" alt="">
+									<img src="img/our-partners/8.png" alt="">
+									<img src="img/our-partners/9.png" alt="">
+									<img src="img/our-partners/10.png" alt="">
+									<img src="img/our-partners/11.png" alt="">
+									<img src="img/our-partners/12.png" alt="">
+									<img src="img/our-partners/13.png" alt="">
+									<img src="img/our-partners/14.png" alt="">
+									<img src="img/our-partners/15.png" alt="">
+									<img src="img/our-partners/16.png" alt="">
+									<img src="img/our-partners/17.png" alt="">
+									<img src="img/our-partners/18.png" alt="">
+									<img src="img/our-partners/19.png" alt="">
+									<img src="img/our-partners/20.png" alt="">
+									<img src="img/our-partners/21.png" alt="">
+								</div>
+								<div aria-hidden="true">
+									<img src="img/our-partners/1.png" alt="">
+									<img src="img/our-partners/2.png" alt="">
+									<img src="img/our-partners/3.png" alt="">
+									<img src="img/our-partners/4.png" alt="">
+									<img src="img/our-partners/5.png" alt="">
+									<img src="img/our-partners/6.png" alt="">
+									<img src="img/our-partners/7.png" alt="">
+									<img src="img/our-partners/8.png" alt="">
+									<img src="img/our-partners/9.png" alt="">
+									<img src="img/our-partners/10.png" alt="">
+									<img src="img/our-partners/11.png" alt="">
+									<img src="img/our-partners/12.png" alt="">
+									<img src="img/our-partners/13.png" alt="">
+									<img src="img/our-partners/14.png" alt="">
+									<img src="img/our-partners/15.png" alt="">
+									<img src="img/our-partners/16.png" alt="">
+									<img src="img/our-partners/17.png" alt="">
+									<img src="img/our-partners/18.png" alt="">
+									<img src="img/our-partners/19.png" alt="">
+									<img src="img/our-partners/20.png" alt="">
+									<img src="img/our-partners/21.png" alt="">									
+								</div>
+							</div>
+							<div class="certificates__content tabs">
+								<div class="certificates__left">
+									<p data-tab="certificates1" class="active">ATEN</p>
+									<p data-tab="certificates2">ATLONA</p>
+									<p data-tab="certificates3">AVER</p>
+									<p data-tab="certificates4">BOSCH</p>
+									<p data-tab="certificates5">CASIO</p>
+									<p data-tab="certificates6">CISCO</p>
+									<p data-tab="certificates7">CRESTRON</p>
+									<p data-tab="certificates8">ECLER</p>
+									<p data-tab="certificates9">EPSON</p>
+									<p data-tab="certificates10">EXTRON</p>
+									<p data-tab="certificates11">HP</p>
+									<p data-tab="certificates12">KRAMER</p>
+									<p data-tab="certificates13">LG</p>
+									<p data-tab="certificates14">LIFESIZE</p>
+									<p data-tab="certificates15">NEC</p>
+									<p data-tab="certificates16">PANASONIC</p>
+									<p data-tab="certificates17">POLYCOM</p>
+									<p data-tab="certificates18">PROJECTA</p>
+									<p data-tab="certificates19">SENNHEISER</p>
+									<p data-tab="certificates20">SHARP</p>
+									<p data-tab="certificates21">SHURE</p>
+									<p data-tab="certificates22">SMART TECHNOLOGIES</p>
+									<p data-tab="certificates23">SONY</p>
+									<p data-tab="certificates24">TELEVIC</p>
+									<p data-tab="certificates25">WIZE</p>
+									<p data-tab="certificates26">YAMAHA</p>
+								</div>
+								<div data-content="certificates1" class="certificates__body target">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/1.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates2" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/2.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates3" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/3.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates4" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/4.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates5" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/5.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates6" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/6.png" alt="">
+										</div>
+										<p>
+											Cisco – одна из крупнейших в мире компаний в области высоких технологий. Специализируется на разработке и продаже сетевого оборудования для крупных организаций и телекоммуникационных предприятий.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates7" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/7.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates8" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/8.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates9" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/9.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates10" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/10.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates11" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/11.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates12" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/12.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates13" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/13.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates14" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/14.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates15" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/15.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates16" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/16.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates17" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/17.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates18" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/18.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates19" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/19.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates20" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/20.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates21" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/21.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates22" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/22.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates23" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/23.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates24" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/24.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates25" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/25.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>
+								<div data-content="certificates26" class="certificates__body">
+									<p></p>
+									<div class="certificates__wrapper">
+										<img src="img/certificates/close.svg" alt="">
+										<div class="certificates__logo">
+											<img src="img/certificates/26.png" alt="">
+										</div>
+										<p>
+											Компания ATEN – это производитель специализированных аудио- и видео решений для профессионального использования, а также решений для эффективного управления информационной инфраструктурой, в том числе удаленно.
+										</p>
+										<a target="_blank" href="#">
+											<img src="img/certificates/pdf.png" alt="">
+											Сертификат PDF
+										</a>
+									</div>
+								</div>																		
+							</div>
+						</div>
+					</section>					
+				</div>
+				<div id="vacancy" class="vacancy block gray">
+					<div class="vacancy__container">
+						<div class="vacancy__top">
+							<div class="vacancy__title title">
+								Вакансии
+							</div>	
+							<a href="#">
+								Все вакансии
+							</a>						
+						</div>
+						<div class="vacancy__subtitle">
+							Мы всегда рады новым профессионалам в нашей команде, готовы обучать и передавать накопленный опыт и знания индустрии. Напишите нам, если хотите работать с нами
+						</div>
+						<div class="vacancy__tabs tabs">
+							<div class="vacancy__left swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide active" data-tab="vacancy1">
+										<div class="vacancy__name">
+											Pre-sale инженер по звуку
+										</div>
+										<div class="vacancy__bottom">
+											<p>
+												<b>1</b>
+												<span>
+													вакансия
+												</span>
+											</p>
+											<svg viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20.2929 0.292893C20.6834 -0.097631 21.3166 -0.0976311 21.7071 0.292893L27.3638 5.94963C27.7544 6.34016 27.7545 6.97344 27.364 7.36396C27.3596 7.36828 27.3553 7.37254 27.3509 7.37676L21.707 13.0207C21.3165 13.4112 20.6833 13.4112 20.2928 13.0207C19.9023 12.6302 19.9023 11.997 20.2928 11.6065L24.2424 7.65683H1C0.447714 7.65683 0 7.20912 0 6.65683C0 6.10455 0.447716 5.65683 1 5.65683H24.2426L20.2929 1.70711C19.9024 1.31658 19.9024 0.683417 20.2929 0.292893Z" fill="#3F69FF"/>
+											</svg>
+											<svg width="48" height="14" viewBox="0 0 48 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M40.2929 0.292893C40.6834 -0.097631 41.3166 -0.0976311 41.7071 0.292893L47.3638 5.94963C47.7544 6.34016 47.7545 6.97344 47.364 7.36396C47.3596 7.36828 47.3553 7.37254 47.3509 7.37676L41.707 13.0207C41.3165 13.4112 40.6833 13.4112 40.2928 13.0207C39.9023 12.6302 39.9023 11.997 40.2928 11.6065L44.2424 7.65683H1C0.447714 7.65683 0 7.20912 0 6.65683C0 6.10455 0.447716 5.65683 1 5.65683H44.2426L40.2929 1.70711C39.9024 1.31658 39.9024 0.683417 40.2929 0.292893Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="swiper-slide" data-tab="vacancy2">
+										<div class="vacancy__name">
+											Pre-sale инженер AV решений
+										</div>
+										<div class="vacancy__bottom">
+											<p>
+												<b>2</b>
+												<span>
+													вакансии
+												</span>
+											</p>
+											<svg viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20.2929 0.292893C20.6834 -0.097631 21.3166 -0.0976311 21.7071 0.292893L27.3638 5.94963C27.7544 6.34016 27.7545 6.97344 27.364 7.36396C27.3596 7.36828 27.3553 7.37254 27.3509 7.37676L21.707 13.0207C21.3165 13.4112 20.6833 13.4112 20.2928 13.0207C19.9023 12.6302 19.9023 11.997 20.2928 11.6065L24.2424 7.65683H1C0.447714 7.65683 0 7.20912 0 6.65683C0 6.10455 0.447716 5.65683 1 5.65683H24.2426L20.2929 1.70711C19.9024 1.31658 19.9024 0.683417 20.2929 0.292893Z" fill="#3F69FF"/>
+											</svg>
+											<svg width="48" height="14" viewBox="0 0 48 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M40.2929 0.292893C40.6834 -0.097631 41.3166 -0.0976311 41.7071 0.292893L47.3638 5.94963C47.7544 6.34016 47.7545 6.97344 47.364 7.36396C47.3596 7.36828 47.3553 7.37254 47.3509 7.37676L41.707 13.0207C41.3165 13.4112 40.6833 13.4112 40.2928 13.0207C39.9023 12.6302 39.9023 11.997 40.2928 11.6065L44.2424 7.65683H1C0.447714 7.65683 0 7.20912 0 6.65683C0 6.10455 0.447716 5.65683 1 5.65683H44.2426L40.2929 1.70711C39.9024 1.31658 39.9024 0.683417 40.2929 0.292893Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="swiper-slide" data-tab="vacancy3">
+										<div class="vacancy__name">
+											Главный инженер проектов
+										</div>
+										<div class="vacancy__bottom">
+											<p>
+												<b>1</b>
+												<span>
+													вакансия
+												</span>
+											</p>
+											<svg viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20.2929 0.292893C20.6834 -0.097631 21.3166 -0.0976311 21.7071 0.292893L27.3638 5.94963C27.7544 6.34016 27.7545 6.97344 27.364 7.36396C27.3596 7.36828 27.3553 7.37254 27.3509 7.37676L21.707 13.0207C21.3165 13.4112 20.6833 13.4112 20.2928 13.0207C19.9023 12.6302 19.9023 11.997 20.2928 11.6065L24.2424 7.65683H1C0.447714 7.65683 0 7.20912 0 6.65683C0 6.10455 0.447716 5.65683 1 5.65683H24.2426L20.2929 1.70711C19.9024 1.31658 19.9024 0.683417 20.2929 0.292893Z" fill="#3F69FF"/>
+											</svg>
+											<svg width="48" height="14" viewBox="0 0 48 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M40.2929 0.292893C40.6834 -0.097631 41.3166 -0.0976311 41.7071 0.292893L47.3638 5.94963C47.7544 6.34016 47.7545 6.97344 47.364 7.36396C47.3596 7.36828 47.3553 7.37254 47.3509 7.37676L41.707 13.0207C41.3165 13.4112 40.6833 13.4112 40.2928 13.0207C39.9023 12.6302 39.9023 11.997 40.2928 11.6065L44.2424 7.65683H1C0.447714 7.65683 0 7.20912 0 6.65683C0 6.10455 0.447716 5.65683 1 5.65683H44.2426L40.2929 1.70711C39.9024 1.31658 39.9024 0.683417 40.2929 0.292893Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="swiper-slide" data-tab="vacancy4">
+										<div class="vacancy__name">
+											Проектировщик AV решений
+										</div>
+										<div class="vacancy__bottom">
+											<p>
+												<b>1</b>
+												<span>
+													вакансия
+												</span>
+											</p>
+											<svg viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20.2929 0.292893C20.6834 -0.097631 21.3166 -0.0976311 21.7071 0.292893L27.3638 5.94963C27.7544 6.34016 27.7545 6.97344 27.364 7.36396C27.3596 7.36828 27.3553 7.37254 27.3509 7.37676L21.707 13.0207C21.3165 13.4112 20.6833 13.4112 20.2928 13.0207C19.9023 12.6302 19.9023 11.997 20.2928 11.6065L24.2424 7.65683H1C0.447714 7.65683 0 7.20912 0 6.65683C0 6.10455 0.447716 5.65683 1 5.65683H24.2426L20.2929 1.70711C19.9024 1.31658 19.9024 0.683417 20.2929 0.292893Z" fill="#3F69FF"/>
+											</svg>
+											<svg width="48" height="14" viewBox="0 0 48 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M40.2929 0.292893C40.6834 -0.097631 41.3166 -0.0976311 41.7071 0.292893L47.3638 5.94963C47.7544 6.34016 47.7545 6.97344 47.364 7.36396C47.3596 7.36828 47.3553 7.37254 47.3509 7.37676L41.707 13.0207C41.3165 13.4112 40.6833 13.4112 40.2928 13.0207C39.9023 12.6302 39.9023 11.997 40.2928 11.6065L44.2424 7.65683H1C0.447714 7.65683 0 7.20912 0 6.65683C0 6.10455 0.447716 5.65683 1 5.65683H44.2426L40.2929 1.70711C39.9024 1.31658 39.9024 0.683417 40.2929 0.292893Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-content="vacancy1" class="vacancy__content target">
+								<p>
+									Pre-sale инженер по звуку
+								</p>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/1.svg" alt="">
+											<span>
+												Обязанности
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/2.svg" alt="">
+											<span>
+												Требования к знаниям
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/3.svg" alt="">
+											<span>
+												Приветствуется
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/4.svg" alt="">
+											<span>
+												Условия работы 
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/5.svg" alt="">
+											<span>
+												Социальный пакет
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<a data-topopup="#popup" href="#" class="vacancy__button button">
+									откликнуться
+								</a>
+							</div>
+							<div data-content="vacancy2" class="vacancy__content">
+								<p>
+									Pre-sale инженер AV решений
+								</p>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/1.svg" alt="">
+											<span>
+												Обязанности
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/2.svg" alt="">
+											<span>
+												Требования к знаниям
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/3.svg" alt="">
+											<span>
+												Приветствуется
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/4.svg" alt="">
+											<span>
+												Условия работы 
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/5.svg" alt="">
+											<span>
+												Социальный пакет
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<a data-topopup="#popup" href="#" class="vacancy__button button">
+									откликнуться
+								</a>
+							</div>
+							<div data-content="vacancy3" class="vacancy__content">
+								<p>
+									Главный инженер проектов
+								</p>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/1.svg" alt="">
+											<span>
+												Обязанности
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/2.svg" alt="">
+											<span>
+												Требования к знаниям
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/3.svg" alt="">
+											<span>
+												Приветствуется
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/4.svg" alt="">
+											<span>
+												Условия работы 
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/5.svg" alt="">
+											<span>
+												Социальный пакет
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<a data-topopup="#popup" href="#" class="vacancy__button button">
+									откликнуться
+								</a>
+							</div>
+							<div data-content="vacancy4" class="vacancy__content">
+								<p>
+									Проектировщик AV решений
+								</p>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/1.svg" alt="">
+											<span>
+												Обязанности
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/2.svg" alt="">
+											<span>
+												Требования к знаниям
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/3.svg" alt="">
+											<span>
+												Приветствуется
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/4.svg" alt="">
+											<span>
+												Условия работы 
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<div class="vacancy__spoiler">
+									<div class="vacancy__spoiler-top">
+										<p>
+											<img src="img/vacancy/5.svg" alt="">
+											<span>
+												Социальный пакет
+											</span>
+										</p>
+										<div class="vacancy__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.578632 0.519062C0.870974 0.226719 1.34496 0.226719 1.6373 0.519062L6.05836 4.94013L4.9997 5.99879L0.578632 1.57773C0.28629 1.28539 0.286289 0.811404 0.578632 0.519062Z" fill="white"/>
+												<path d="M3.94209 4.94212L8.36112 0.523084C8.65317 0.231038 9.12667 0.231038 9.41872 0.523084C9.71076 0.815131 9.71076 1.28863 9.41872 1.58068L4.9997 5.99879L3.94209 4.94212Z" fill="white"/>
+											</svg>
+										</div>
+									</div>
+									<div class="vacancy__spoiler-text">
+										<p>Опыт работы по указанному профилю – не менее 3-х лет;</p>
+
+										<p>Образование не ниже среднего специального. Высшее образование приветствуется</p>
+
+										<p>Знание теоретических основ радиотехники</p>
+
+										<p>Опыт монтажа оборудования, сборки оборудования в рековых стойках с учётом требований эргономики эксплуатации и обслуживания оного. Соблюдение при этом аккуратности, эстетики и культуры производства</p>
+
+										<p>Знание основных принципов построения современных аудио-видео систем: корпоративных (конференц-залы, переговорные и пр.), сценических (актовые залы)</p>
+
+										<p>Понимание основ работы с системами видеоотображения: проекторы, дисплеи, видеостены, светодиодные экраны и прочее</p>
+
+										<p>Понимание основ работы с системами звуковоспроизведения: корпоративных, вещательных (public address), концертных</p>
+
+										<p>Понимание основ работы с конференц-системами и ВКС</p>
+
+										<p>Понимание основ работы с системами Digital Signage</p>
+
+										<p>Понимание основ сборки ПК под нужды Заказчика</p>
+									</div>
+								</div>
+								<a data-topopup="#popup" href="#" class="vacancy__button button">
+									откликнуться
+								</a>
+							</div>							
+						</div>
+						<a href="#" class="vacancy__btn">
+							Все вакансии
+						</a>
+					</div>
+				</div>
+				<div class="our-contacts block gray" id="contacts">
+					<div class="our-contacts__container">
+						<div class="our-contacts__body">
+							<div class="our-contacts__title title">
+								Контакты
+							</div>		
+							<a href="tel:+74997033211" class="our-contacts__phone">+7 499 703-32-11</a>					
+							<a href="mailto:info@i-tec.ru" class="our-contacts__mail">
+								info@i-tec.ru
+							</a>
+							<span>
+								117545, Москва, 1-й Дорожный проезд, 6С3, БЦ Гелиум
+							</span>
+							<small>
+								Внимание: перед визитом позвоните и закажите пропуск!
+							</small>
+							<p>
+								<b>График работы:</b>
+								Понедельник - Пятница с 10-00 до 19-00
+							</p>
+							<a data-topopup="#popup" href="#" class="our-contacts__button">
+								Отправить собщение
+							</a>
+						</div>
+						<div class="our-contacts__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4d462f298ae84a34728503ad9880e2f490debb7fc801e5f8953d5dd856b6d224&amp;source=constructor"></iframe>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<nav class="footer__menu">
+						<a href="aboutus.html">О нас</a>
+						<a href="solutions.html">
+							Решения
+						</a>
+						<a href="brands.html">
+							Бренды
+						</a>
+						<a href="portfolio.html">Портфолио</a>
+						<a href="reviews.html">Отзывы</a>
+						<a href="certificates.html">Сертификаты</a>
+						<a href="contacts.html">Контакты</a>
+					</nav>
+					<div class="footer__socials">
+						<a target="_blank" href="#">
+							<img src="img/footer/vk.svg" alt="">
+						</a>
+						<a target="_blank" href="#">
+							<img src="img/footer/yt.svg" alt="">
+						</a>						
+					</div>
+				</div>
+				<div class="footer__middle">
+					<div class="footer__content">
+						<p>
+							<b>
+								Москва, 1-й Дорожный проезд, 6С3, БЦ Гелиум
+							</b>
+							<a href="#">
+								Карта проезда
+							</a>
+						</p>
+						<span>
+							время работы с 10:00 до 19:00
+						</span>
+						<div class="footer__socials">
+							<a target="_blank" href="#">
+								<img src="img/footer/vk.svg" alt="">
+							</a>
+							<a target="_blank" href="#">
+								<img src="img/footer/yt.svg" alt="">
+							</a>						
+						</div>
+					</div>
+					<div class="footer__right">
+						<p>
+							<a class="footer__call" href="tel:+74997033211">
+								+7 (499) 703-32-11
+							</a>
+							<a data-topopup="#popup" href="#popup" class="footer__button">
+								Обратный звонок
+							</a>							
+						</p>
+						<p>
+							<a class="footer__mail" href="mailto:info@i-tec.ru">
+								info@i-tec.ru
+							</a>
+							<a data-topopup="#popup" href="#popup" class="footer__button">
+								Напишите нам
+							</a>							
+						</p>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<span>
+						2007-2023 Айтек © 
+					</span>
+					<a href="#">
+						Карта сайта
+					</a>
+					<a href="#">
+						Политика конфиденциальности
+					</a>
+					<span>
+						Создание сайта <br><em>—</em> FUNKY MONKEY
+					</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="formPopup popup" id="popup">
+		<span class="popup__close"></span>
+		<form class="formPopup__content">
+			<img class="popup__close" src="img/equipment/close.svg" alt="">
+			<div class="formPopup__title">
+				Оформить заявку
+			</div>
+			<div class="formPopup__subtitle">
+				Оставьте ваш номер телефона и мы перезвоним!
+			</div>
+			<div class="formPopup__inputs">
+				<div class="formPopup__input">
+					<span>Ваше имя</span>
+					<input type="text">
+				</div>
+				<div class="formPopup__input">
+					<span>Телефон*</span>
+					<input class="telmask" type="tel" pattern="\+7\(\d{3}\) \d{3}-\d{2}-\d{2}" oninvalid="this.setCustomValidity('Поле не правильно заполнен')" oninput="this.setCustomValidity('')" required>					
+				</div>
+			</div>
+			<button>ОТПРАВИТЬ</button>
+			<div class="formPopup__bottom">
+				Нажимая кнопку “Отправить” вы подтверждаете свое согласие на обработку персональных данных
+			</div>
+			
+		</form>
+	</div>
+	<div id="video-popup" class="popup video-popup">
+		<p class="popup__close"></p>
+		<div class="video-popup__container">
+			<div class="popup__close">
+				<img src="img/equipment/close.svg" alt="">
+			</div>
+			<video src="img/about-us/video.mp4" controls>
+			</video>				
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

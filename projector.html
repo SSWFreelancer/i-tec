@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Айтек</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header header-white">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+				<svg viewBox="0 0 149 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="toBlack" d="M10.27 13.5478H14.1275L24.3311 37.8924H20.2746L17.6365 31.4678H6.73609L4.09808 37.8924H0.0664062L10.27 13.5478ZM8.15464 27.9724H16.2429L12.2112 17.8801L8.15464 27.9724ZM52.6026 37.8924V20.3417L38.8899 37.8924H35.5551V13.5478H39.4126V31.1232L53.1252 13.5478H56.4601V37.8924H52.6026ZM86.3492 13.5478V17.0186H78.9578V37.8924H75.1003V17.0186H67.7089V13.5478H86.3492ZM115.342 34.397V37.8678H97.5981V13.5232H114.994V16.994H101.456V23.4186H112.182V26.8893H101.456V34.3478H115.342V34.397ZM131.519 25.3632L142.594 13.5232H147.521L138.039 23.6155L148.243 37.8678H143.489L135.401 26.397L131.544 30.5817V37.8924H127.686V13.5478H131.544V25.3632H131.519Z" fill="white"/>
+					<path d="M49.2922 8.69843C49.3059 9.15382 49.2053 9.60546 48.9994 10.013C48.7934 10.4205 48.4886 10.7712 48.1122 11.0337C47.7357 11.2962 47.2993 11.4624 46.8421 11.5173C46.3848 11.5722 45.9209 11.5142 45.4919 11.3484C45.0629 11.1827 44.6821 10.9143 44.3835 10.5674C44.085 10.2205 43.878 9.80575 43.7811 9.36036C43.6842 8.91496 43.7004 8.45276 43.8283 8.01508C43.9562 7.57741 44.1917 7.1779 44.5139 6.85228C45.0863 6.28612 45.8578 6.01535 46.6044 6.03997H46.6293C47.0145 6.05013 47.3977 5.98259 47.7556 5.84145C48.1135 5.70032 48.4386 5.48855 48.7111 5.21906C48.9835 4.94958 49.1976 4.62802 49.3403 4.27401C49.483 3.92 49.5513 3.54094 49.541 3.15997V3.13535C49.5273 2.67997 49.6279 2.22832 49.8339 1.8208C50.0398 1.41328 50.3446 1.06258 50.7211 0.800068C51.0975 0.537556 51.5339 0.371412 51.9911 0.316492C52.4484 0.261572 52.9123 0.319589 53.3413 0.485354C53.7704 0.651119 54.1512 0.919466 54.4497 1.2664C54.7483 1.61333 54.9552 2.02804 55.0521 2.47343C55.149 2.91882 55.1328 3.38102 55.0049 3.8187C54.877 4.25638 54.6415 4.65589 54.3193 4.98151C54.0451 5.25051 53.7183 5.46131 53.3588 5.60099C52.9993 5.74067 52.6148 5.80628 52.2288 5.79382H52.2039C51.8166 5.78349 51.4312 5.85175 51.0716 5.99439C50.712 6.13702 50.3857 6.35101 50.1128 6.62316C49.84 6.89531 49.6265 7.21985 49.4853 7.57677C49.3442 7.93369 49.2784 8.31542 49.2922 8.69843C49.2922 8.67382 49.2922 8.67382 49.2922 8.69843Z" fill="url(#paint0_linear_410_393)"/>
+					<path d="M43.6934 8.69819C43.6797 9.15357 43.7803 9.60522 43.9862 10.0127C44.1921 10.4203 44.4969 10.771 44.8734 11.0335C45.2499 11.296 45.6862 11.4621 46.1435 11.517C46.6007 11.572 47.0646 11.514 47.4937 11.3482C47.9227 11.1824 48.3035 10.9141 48.6021 10.5671C48.9006 10.2202 49.1076 9.8055 49.2045 9.36011C49.3013 8.91472 49.2851 8.45252 49.1572 8.01484C49.0294 7.57716 48.7938 7.17765 48.4717 6.85203C48.1975 6.58303 47.8706 6.37223 47.5112 6.23255C47.1517 6.09288 46.7672 6.02726 46.3812 6.03973H46.3563C45.9711 6.04989 45.5879 5.98235 45.23 5.84121C44.872 5.70007 44.5469 5.48831 44.2745 5.21882C44.002 4.94933 43.7879 4.62778 43.6452 4.27377C43.5025 3.91975 43.4342 3.5407 43.4445 3.15973V3.13511C43.4582 2.67973 43.3576 2.22808 43.1517 1.82056C42.9458 1.41303 42.641 1.06234 42.2645 0.799823C41.888 0.537311 41.4517 0.371167 40.9944 0.316248C40.5372 0.261328 40.0733 0.319345 39.6443 0.48511C39.2152 0.650875 38.8344 0.919222 38.5358 1.26615C38.2373 1.61309 38.0303 2.02779 37.9334 2.47319C37.8366 2.91858 37.8528 3.38078 37.9807 3.81846C38.1085 4.25613 38.3441 4.65564 38.6662 4.98126C39.2386 5.54742 40.0101 5.81819 40.7567 5.79357H40.7816C41.169 5.78325 41.5543 5.8515 41.914 5.99414C42.2736 6.13678 42.5999 6.35077 42.8727 6.62292C43.1455 6.89507 43.3591 7.21961 43.5003 7.57653C43.6414 7.93345 43.7071 8.31518 43.6934 8.69819C43.7183 8.67357 43.7183 8.67357 43.6934 8.69819Z" fill="url(#paint1_linear_410_393)"/>
+					<defs>
+						<linearGradient id="paint0_linear_410_393" x1="43.7175" y1="5.91689" x2="55.1157" y2="5.91689" gradientUnits="userSpaceOnUse">
+							<stop offset="0.1" stop-color="#006E3B"/>
+							<stop offset="0.7" stop-color="#0C5B82"/>
+							<stop offset="1" stop-color="#11539F"/>
+						</linearGradient>
+						<linearGradient id="paint1_linear_410_393" x1="49.4423" y1="9.28896" x2="37.7856" y2="2.458" gradientUnits="userSpaceOnUse">
+							<stop offset="0.1" stop-color="#E31921"/>
+							<stop offset="0.2" stop-color="#E42721"/>
+							<stop offset="0.4" stop-color="#E63D22"/>
+							<stop offset="0.5" stop-color="#A8752F"/>
+							<stop offset="0.7" stop-color="#64B23E"/>
+							<stop offset="1" stop-color="#65B231"/>
+						</linearGradient>
+					</defs>
+				</svg>
+				</a>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item has-sublist">
+							<a href="solutions.html" class="menu__link">
+								<span>Решения</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 1L5 4.75L1.25 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<div class="menu__wrapper">
+								<div class="menu__container">
+									<div class="menu__left">
+										<a data-tab="solution1" class="active" href="solutions.html">Помещения</a>
+										<a data-tab="solution2" href="solutions.html">Мероприятия</a>
+										<a data-tab="solution3" href="solutions.html">Отрасли</a>
+										<a data-tab="solution4" href="solutions.html">Оборудование</a>
+										<a data-tab="solution5" href="solutions.html">Монтаж</a>
+										<a data-tab="solution6" href="solutions.html">Библиотека знаний</a>
+									</div>
+									<div data-content="solution1" class="menu__body target">
+										<a href="#">Переговорные комнаты</a>
+										<a href="#">Залы совещаний</a>
+										<a href="#">Конференц-залы</a>
+										<a href="#">Залы заседаний</a>
+										<a href="#">Актовые залы</a>
+										<a href="#">Фойе и холлы компаний</a>
+										<a href="#">Кабинет руководителя</a>
+										<a href="#">Лекционные залы</a>
+										<a href="#">Учебные аудитории</a>
+										<a href="#">Домашние кинотеатры</a>
+										<a href="#">Кафе | Рестораны | Бары</a>
+										<a href="#">Ситуационные центры</a>
+										<a href="#">Диспетчерские центры</a>
+										<a href="#">Современный офис</a>
+									</div>
+									<div data-content="solution2" class="menu__body">
+										<a href="#">Видеоконференция</a>
+										<a href="#">Конференция</a>
+										<a href="#">Выступления</a>
+										<a href="#">Презентация</a>
+									</div>
+									<div data-content="solution3" class="menu__body">
+										<a href="#">Медицинские учреждения</a>
+										<a href="#">Промышленность</a>
+										<a href="#">Образование</a>
+										<a href="#">Государственный сектор</a>
+										<a href="#">Гостиницы</a>
+										<a href="#">Корпоративный сектор</a>
+										<a href="#">Спортивные и фитнес залы</a>
+										<a href="#">Банки</a>
+									</div>
+									<div data-content="solution4" class="menu__body">
+										<a href="#">Аудио</a>
+										<a href="#">Аудиовизуальное</a>
+										<a href="#">Мультимедийное</a>
+										<a href="#">Видеостены</a>
+										<a href="#">Мультимедиа</a>
+										<a href="#">Озвучивание помещений</a>
+										<a href="#">Озвучивание территорий</a>
+									</div>
+									<div data-content="solution5" class="menu__body">
+										<a href="#">Проектор</a>
+										<a href="#">Проекционный экран</a>
+										<a href="#">Проекционное оборудование</a>
+										<a href="#">Интерактивные доски</a>
+										<a href="#">Видеостены</a>
+									</div>
+									<div data-content="solution6" class="menu__body">
+										<a href="#">Средства отображения информации</a>
+										<a href="#">Видеоконференцсвязь</a>
+										<a href="#">Конференц-системы</a>
+										<a href="#">Синхронный перевод</a>
+										<a href="#">Интерактивное голосование</a>
+										<a href="#">Звуковое оборудование</a>
+										<a href="#">BYOD устройства (Bring Your Own Device)</a>
+										<a href="#">Системы бронирования</a>
+										<a href="#">Digital Signage</a>
+										<a href="#">Коммутация</a>
+										<a href="#">Моторизованные шторы</a>
+										<a href="#">Централизованное управление (Умный дом)</a>
+										<a href="#">Специализированная мебель</a>
+										<a href="#">
+											Сценическое освещение
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu__item has-sublist">
+							<a href="brands.html" class="menu__link">
+								<span>Бренды</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 1L5 4.75L1.25 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>	
+							</a>
+							<div class="menu__wrapper">
+								<div class="menu__container">			
+									<div class="menu__left">
+
+										<a href="#" class="menu-main__item">
+											<img src="img/arrow.svg" alt="">
+											Бренды
+										</a>		
+
+										<a data-tab="brand1" class="active" href="brands.html">Проекторы</a>
+										<a data-tab="brand2" href="brands.html">Проекционные экраны</a>
+										<a data-tab="brand3" href="brands.html">Дисплейные решения</a>
+										<a data-tab="brand4" href="brands.html">Видеоконференцсвязь</a>
+										<a data-tab="brand5" href="brands.html">Звуковое оборудование</a>
+										<a data-tab="brand6" href="brands.html">Конгресс-системы</a>
+										<a data-tab="brand7" href="brands.html">Системы автомазиции</a>
+										<a data-tab="brand8" href="brands.html">Системы совместной работы</a>
+										<a data-tab="brand9" href="brands.html">Коммутация и кабели</a>
+									</div>
+
+									<div class="menu__search">
+										<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>	
+										<input type="text" placeholder="Поиск по сайту">							
+									</div>
+
+									<div data-content="brand1" class="menu__wrap target">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Проекторы Epson">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Проекторы Panasonic">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Проекторы Nec">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Проекторы Infocus">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Проекторы Eiki">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Проекторы Barco">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Проекторы Sony">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Проекторы Vivitek">
+										</a>
+									</div>
+									<div data-content="brand2" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Проекционные экраны Draper">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Проекционные экраны Da-Lite">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Проекционные экраны Projecta">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Проекционные экраны Digis">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Проекционные экраны Lumien">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Проекционные экраны Draper">
+										</a>
+									</div>
+									<div data-content="brand3" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Профессиональные панели EliteBoard">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Профессиональные панели Panasonic">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Профессиональные панели LG">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Профессиональные панели Samsung">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Профессиональные панели NEC">
+										</a>
+									</div>
+									<div data-content="brand4" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Видеоконференцсязь Polycom">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Видеоконференцсязь Cisco">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Видеоконференцсязь Yealink">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Видеоконференцсязь Lifesize">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Видеоконференцсязь Trueconf">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Видеоконференцсязь ClearOne">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Видеоконференцсязь Polycom">
+										</a>
+									</div>
+									<div data-content="brand5" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Звуковое оборудование Yamaha">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Звуковое оборудование JBL">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Звуковое оборудование Audac">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Звуковое оборудование Apart">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Звуковое оборудование Bose">
+										</a>
+									</div>
+									<div data-content="brand6" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Конгресс-системы Shure">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Конгресс-системы Televic">
+										</a>
+									</div>
+									<div data-content="brand7" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Системы автомазиции RTI">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Системы автомазиции и управление Crestron">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Системы автомазиции и управление AMX">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Системы автомазиции RTX">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Системы автомазиции GTX">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Системы автомазиции NEC">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Системы автомазиции Sony">
+										</a>
+									</div>
+									<div data-content="brand8" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Система совместной работы Barco">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Система совместной работы Kramer">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Система совместной работы Biamp">
+										</a>
+										<a href="#">
+											<img src="img/menu/4.png" alt="Система совместной работы AMX">
+										</a>
+										<a href="#">
+											<img src="img/menu/5.png" alt="Система совместной работы Vivitek">
+										</a>
+										<a href="#">
+											<img src="img/menu/6.png" alt="Система совместной работы RTA">
+										</a>
+										<a href="#">
+											<img src="img/menu/7.png" alt="Система совместной работы XSL">
+										</a>
+										<a href="#">
+											<img src="img/menu/8.png" alt="Проекторы Epson">
+										</a>
+									</div>
+									<div data-content="brand9" class="menu__wrap">
+										<a href="#">
+											<img src="img/menu/1.png" alt="Коммутационное оборудование Extron">
+										</a>
+										<a href="#">
+											<img src="img/menu/2.png" alt="Коммутационное оборудование ATEN">
+										</a>
+										<a href="#">
+											<img src="img/menu/3.png" alt="Коммутационное оборудование Digis">
+										</a>
+									</div>	
+								</div>															
+							</div>
+						</li>
+						<li class="menu__item">
+							<a href="aboutus.html" class="menu__link"><span>О нас</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="portfolio.html" class="menu__link"><span>Портфолио</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="reviews.html" class="menu__link"><span>Отзывы</span></a>
+						</li>
+						<li class="menu__item">
+							<a href="certificates.html" class="menu__link"><span>Сертификаты</span></a>
+						</li>				
+						<li class="menu__item">
+							<a href="contacts.html" class="menu__link"><span>Контакты</span></a>
+						</li>									
+					</ul>
+					<div class="menu__search">
+						<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>	
+						<input type="text" placeholder="Поиск по сайту">							
+					</div>
+				</nav>
+				<div class="header__actions">
+					<a href="tel:+74997033211" class="header__call">
+						<svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.3433 18.48L19.5833 16.24C19.885 15.9421 20.2667 15.7381 20.6821 15.6529C21.0975 15.5677 21.5287 15.6049 21.9233 15.76L24.6533 16.85C25.0521 17.0119 25.3941 17.2882 25.6361 17.6441C25.8781 18.0001 26.0094 18.4197 26.0133 18.85V23.85C26.011 24.1428 25.9494 24.4321 25.8324 24.7005C25.7153 24.9688 25.5452 25.2107 25.3321 25.4116C25.1191 25.6125 24.8677 25.7682 24.5929 25.8693C24.3181 25.9704 24.0257 26.0149 23.7333 26C4.60332 24.81 0.743317 8.61004 0.0133175 2.41004C-0.0205696 2.10558 0.0103921 1.79739 0.104166 1.50575C0.197939 1.21411 0.352399 0.945633 0.557385 0.717977C0.76237 0.49032 1.01323 0.308646 1.29348 0.184905C1.57372 0.0611637 1.87698 -0.00183916 2.18332 4.0869e-05H7.01332C7.44433 0.00131666 7.8651 0.131508 8.22151 0.37387C8.57793 0.616232 8.85369 0.959681 9.01332 1.36004L10.1033 4.09004C10.2636 4.48311 10.3045 4.91468 10.2209 5.33085C10.1373 5.74702 9.93292 6.12934 9.63332 6.43004L7.39332 8.67004C7.39332 8.67004 8.68332 17.4 17.3433 18.48Z" fill="white"/>
+						</svg>			
+						<span>
+							+7 (499) 703-32-11
+						</span>			
+					</a>
+					<div class="header__search">
+						<div class="header__search-body">
+							<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>								
+						</div>
+						<div class="header__search-wrapper">
+							<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3808 13.3808L18 18M15.3333 8.66667C15.3333 12.3486 12.3486 15.3333 8.66667 15.3333C4.98477 15.3333 2 12.3486 2 8.66667C2 4.98477 4.98477 2 8.66667 2C12.3486 2 15.3333 4.98477 15.3333 8.66667Z" stroke="#3C3434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>	
+							<input type="text" placeholder="Поиск по сайту">	
+							<img class="search__close" src="img/equipment/close.svg" alt="">
+						</div>				
+					</div>
+					<div class="header__burger"><span></span></div>
+				</div>
+			</div>
+		</header>
+		<main class="gray">
+			<div class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<a href="index.html">
+						<b>Главная</b>
+						<img src="img/main/arrow.svg" alt="">
+					</a>
+					<a href="index.html">
+						<b>Бренды</b>
+						<img src="img/main/arrow.svg" alt="">
+					</a>
+					<span>
+						Проекторы Epson
+					</span>
+				</div>
+			</div>
+			<div class="projector">
+				<div class="projector__container">
+					<div class="projector__title title-b">
+						Проекторы Epson
+					</div>
+					<div class="projector__content">
+						<div class="projector__text">
+							Компания Seiko Epson Corporation была основана в 1942 года и первоначально занималась выпуском спортивных хронометров и кварцевых часов. В преддверии летней Олимпиады 1964 года в Токио, компания Epson разработала хронометр с автоматической печатью результатов. С этого момента берет начало новое направление деятельности компании – устройства для печати. А в 80-ые Epson начала осваивать и рынок электроники.
+							<ul>
+								<li>Приложение Lifesize получило награду AV Technology Europe Best of Show 2018;</li>
+								<li>
+								Lifesize Icon 450 получил бронзу в номинации Best in Biz Awards 2017 International;</li>
+								<li>
+								Компания Lifesize получила награду TMC за продукт года в области унифицированных коммуникаций 2017 года;</li>
+								<li>
+								Lifesize назван лучшим программным обеспечением для веб-конференций 2016 года по версии TrustRadius;</li>
+								<li>
+								Премия IBM Beacon Award 2016 за выдающееся решение, размещенное в IBM Cloud;</li>
+								<li>
+								Lifesize Icon Flex - золотой победитель премии Golden Bridge Business and Innovation Awards 2015;</li>
+								<li>
+								Lifesize Cloud признан самой инновационной услугой года по версии Best in Biz Awards;</li>
+								<li>и многое другое.</li>
+							</ul>						
+
+						</div>
+						<img src="img/projector/epson.png" alt="">
+						<div class="projector__text">
+							Сегодня линейка продуктов Epson включает не только принтеры, сканеры и проекторы, но и промышленные роботы, POS-системы, микроэлектронику, системы дополненной реальности и многое другое. Философия компании – дарить потребителям яркие цвета и качественные изображения в обрамлении традиционного японского качества. Возможно, именно поэтому Epson является безусловным лидером по объему продаж проекторов, а усилия компании в повышении стандартов качества отмечены множеством престижных наград.
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="projector-series block">
+			<div class="projector-series__container">
+				<div class="projector-series__title title">
+					Серии проекторов Epson
+				</div>
+				<div class="projector-series__cards">
+					<div class="projector-series__card">
+						<div class="projector-series__image">
+							<img src="img/projector/1.png" alt="">
+						</div>
+						<div class="projector-series__text">
+							<p>Интерактивные проекторы</p>
+							<span>Благодаря короткому фокусу, лектор или учитель не перекрывает изображение, а высокая яркость позволяет заниматься в условиях естественного освещения. Модели серии поддерживают интерактивное взаимодействие с изображением с помощью стилуса или даже пальца, а также добавление заметок и комментариев с помощью смартфона и легкий обмен информацией между учащимися и учителем без дополнительных устройств.</span>
+						</div>
+					</div>
+					<div class="projector-series__card">
+						<div class="projector-series__image">
+							<img src="img/projector/2.png" alt="">
+						</div>
+						<div class="projector-series__text">
+							<p>Проекторы для домашних кинотеатров</p>
+							<span>Короткофокусные проекторы этой серии позволяют установить проектор буквально в полуметре от экранной поверхности. Четкая геометрия картинки и яркие насыщенные цвета – заслуга технологии раздельного формирования цветов. А технологии, используемые в моделях с лазерным источником, обеспечивает наивысший возможный уровень контрастности, благодаря тому, что черные пиксели не освещаются проектором совсем.</span>
+						</div>
+					</div>
+					<div class="projector-series__card">
+						<div class="projector-series__image">
+							<img src="img/projector/3.png" alt="">
+						</div>
+						<div class="projector-series__text">
+							<p>Проекторы для бизнеса</p>
+							<span>Мощные лазерные проекторы Epson, как с длинным фокусом – для конференц-залов и залов заседаний, так и с коротким фокусом – для аудиторий и переговорных комнат. Особенность серии – высокая световая яркость, поддержка проекционных экранов до 500 дюймов, а также встроенная система беспроводного подключения для демонстрации контента и практически не требующий обслуживания источник света с гарантированным ресурсом 20,000 часов.</span>
+						</div>
+					</div>
+					<div class="projector-series__card">
+						<div class="projector-series__image">
+							<img src="img/projector/4.png" alt="">
+						</div>
+						<div class="projector-series__text">
+							<p>Бюджетные проекторы</p>
+							<span>Данная серия охватывает проекторы для дома и для корпоративной среды, предлагающие серьезный функционал по относительно доступной цене. Яркие и долговечные источники света позволяют получать легко читаемое изображение на проекционном экране в освещенном классе или при зашторенных окнах. Компактные модели проекторов позволяют организовать выездную пресс-конференцию или презентацию за несколько минут с возможностью передачи контента по беспроводному соединению с любого устройства.</span>
+						</div>
+					</div>
+					<div class="projector-series__card">
+						<div class="projector-series__image">
+							<img src="img/projector/5.png" alt="">
+						</div>
+						<div class="projector-series__text">
+							<p>Инсталляционные проекторы</p>
+							<span>Серия профессиональных проекторов Epson Pro – это воплощение лучших технологий Epson. Сверхвысокая яркость. Возможность использования нескольких проекторов для вывода изображения большого формата. Сменные линзы для адаптации проектора под условия конкретного помещения и решаемой задачи. Поддержка высокого разрешения. Вот лишь некоторые из ключевых особенностей серии Pro. Отдельно стоит отметить длительный срок эксплуатации, который не требует обслуживания на протяжении 20,000 часов работы.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="other-brand block gray">
+			<div class="other-brand__container">
+				<div class="other-brand__title title">
+					Проекторы других брендов
+				</div>
+				<div class="other-brand__cards">
+					<a href="#"  class="other-brand__card"><img src="img/menu/1.png" alt=""></a>
+					<a href="#"  class="other-brand__card"><img src="img/menu/2.png" alt=""></a>
+					<a href="#"  class="other-brand__card"><img src="img/menu/3.png" alt=""></a>
+					<a href="#"  class="other-brand__card"><img src="img/menu/4.png" alt=""></a>
+					<a href="#"  class="other-brand__card"><img src="img/menu/5.png" alt=""></a>
+					<a href="#"  class="other-brand__card"><img src="img/menu/6.png" alt=""></a>
+					<a href="#"  class="other-brand__card"><img src="img/menu/7.png" alt=""></a>
+					<a href="#"  class="other-brand__card"><img src="img/menu/8.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<nav class="footer__menu">
+						<a href="aboutus.html">О нас</a>
+						<a href="solutions.html">
+							Решения
+						</a>
+						<a href="brands.html">
+							Бренды
+						</a>
+						<a href="portfolio.html">Портфолио</a>
+						<a href="reviews.html">Отзывы</a>
+						<a href="certificates.html">Сертификаты</a>
+						<a href="contacts.html">Контакты</a>
+					</nav>
+					<div class="footer__socials">
+						<a target="_blank" href="#">
+							<img src="img/footer/vk.svg" alt="">
+						</a>
+						<a target="_blank" href="#">
+							<img src="img/footer/yt.svg" alt="">
+						</a>						
+					</div>
+				</div>
+				<div class="footer__middle">
+					<div class="footer__content">
+						<p>
+							<b>
+								Москва, 1-й Дорожный проезд, 6С3, БЦ Гелиум
+							</b>
+							<a href="#">
+								Карта проезда
+							</a>
+						</p>
+						<span>
+							время работы с 10:00 до 19:00
+						</span>
+						<div class="footer__socials">
+							<a target="_blank" href="#">
+								<img src="img/footer/vk.svg" alt="">
+							</a>
+							<a target="_blank" href="#">
+								<img src="img/footer/yt.svg" alt="">
+							</a>						
+						</div>
+					</div>
+					<div class="footer__right">
+						<p>
+							<a class="footer__call" href="tel:+74997033211">
+								+7 (499) 703-32-11
+							</a>
+							<a data-topopup="#popup" href="#popup" class="footer__button">
+								Обратный звонок
+							</a>							
+						</p>
+						<p>
+							<a class="footer__mail" href="mailto:info@i-tec.ru">
+								info@i-tec.ru
+							</a>
+							<a data-topopup="#popup" href="#popup" class="footer__button">
+								Напишите нам
+							</a>							
+						</p>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<span>
+						2007-2023 Айтек © 
+					</span>
+					<a href="#">
+						Карта сайта
+					</a>
+					<a href="#">
+						Политика конфиденциальности
+					</a>
+					<span>
+						Создание сайта <br><em>—</em> FUNKY MONKEY
+					</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="formPopup popup" id="popup">
+		<span class="popup__close"></span>
+		<form class="formPopup__content">
+			<img class="popup__close" src="img/equipment/close.svg" alt="">
+			<div class="formPopup__title">
+				Оформить заявку
+			</div>
+			<div class="formPopup__subtitle">
+				Оставьте ваш номер телефона и мы перезвоним!
+			</div>
+			<div class="formPopup__inputs">
+				<div class="formPopup__input">
+					<span>Ваше имя</span>
+					<input type="text">
+				</div>
+				<div class="formPopup__input">
+					<span>Телефон*</span>
+					<input class="telmask" type="tel" pattern="\+7\(\d{3}\) \d{3}-\d{2}-\d{2}" oninvalid="this.setCustomValidity('Поле не правильно заполнен')" oninput="this.setCustomValidity('')" required>					
+				</div>
+			</div>
+			<button>ОТПРАВИТЬ</button>
+			<div class="formPopup__bottom">
+				Нажимая кнопку “Отправить” вы подтверждаете свое согласие на обработку персональных данных
+			</div>
+			
+		</form>
+	</div>	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
